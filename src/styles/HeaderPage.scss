@@ -1,0 +1,23 @@
+.headerPage{
+
+.header {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    min-height: 0;
+    padding-bottom: 70px;
+    h1 {
+        margin-bottom: 20px;
+    }
+    p {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-bottom: 20px;
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+}

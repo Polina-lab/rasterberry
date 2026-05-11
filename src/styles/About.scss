@@ -1,0 +1,170 @@
+.about {
+    position: relative;
+    margin-top: -50px;
+    background: linear-gradient(to bottom,
+    rgba(205, 201, 228, 0.3) 5%,
+    /*#333366 20%,
+    #333366 80%,*/
+    #333366 25%,
+    #333366 75%,
+    rgba(205, 201, 228, 0.3) 95%),
+    #333366;
+    //background: #333366;
+    clip-path: polygon(0 0, 100% 40%, 100% 90%, 50% 100%, 0 90%);
+    display: flex;
+    overflow: hidden;
+    //justify-content: space-around;
+    //align-items: 'center';
+    z-index: 100;
+    .content {
+        display: flex;
+        //display: flex;
+        //justify-content: space-around;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 1;
+        color: #cdc9e4;
+        .line-about {
+            width: 15px;
+            height: 80px;
+            z-index: 1;
+        }
+        .blockFirst {
+            margin: auto;
+            margin-bottom: 10px;
+            //margin-bottom: auto;
+            padding: 50px 10px 20px;
+            //display: inline;
+            width: 30%;
+            //margin-right: auto;
+            text-align: center;
+        }
+        .blockSecond {
+            //position: relative;
+            margin-top: auto;
+            margin-bottom: 5%;
+            padding-left: 10px;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            //margin-left: auto;
+            .image {
+                background: #333366;
+                clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
+                padding: 20px 0;
+                //margin-left: 5%;
+                background-image: url('../assets/about-img3.png');
+                width: 400px;
+                height: 400px;
+                background-size: cover;
+                //background-position: right;
+                background-position: right; 
+                background-repeat: no-repeat;
+                opacity: 0.4;
+            }
+            .logo {
+                //overflow: hidden;
+                margin-top: 10%;
+                background-image: url('../assets/logo-about.png');
+                width: 100px;
+                height: 50px;
+                background-size: contain;
+                background-position: center; 
+                background-repeat: no-repeat;
+            }
+            /*.aboutIMG {
+                background-image: url('../assets/about-img2.png');
+                width: 150px;
+                height: 200px;
+                background-size: contain;
+                background-position: center;
+                background-position: center; 
+                background-repeat: no-repeat;
+            }*/
+        }
+        .btn {
+            margin: 20px 0;
+        }
+        .outline-h:hover {
+            background: #cdc9e4;
+            color: #333366;
+            border: 2px solid #cdc9e4;
+        }
+        p {
+            color:#cdc9e4;
+            text-align: left;
+        }
+        p.capsL {
+            font-variant: small-caps;
+            text-align: center;
+        }
+        .text-container {
+            justify-content: center;
+            display: flex; 
+            align-items: center;
+            gap: 8px;
+          }
+        .icon {
+            width: 35px;
+            height: 30px;
+            background-size: contain;
+            background-position: center;
+            background-position: center; 
+            background-repeat: no-repeat;
+            //border-radius: 50%;
+        }
+        .iconCreative {
+            background-image: url('../assets/icons/creative.png');
+        }
+        .iconTime {
+            background-image: url('../assets/icons/time.png');
+        }
+        .iconPartners {
+            background-image: url('../assets/icons/partners.png');
+        }
+        .iconResult {
+            background-image: url('../assets/icons/result.png');
+        }
+        .dot {
+            width: 40px;
+            height: 10px;
+            background-image: url('../assets/icons/dot.png');
+            background-size: contain; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+    }
+    h2 {
+        font-size: 36pt;
+        font-weight: 50;
+        color: #cdc9e4;
+        margin: 0 -10px;
+    }
+    h3 {
+        font-size: 18pt;
+        color:#cdc9e4;
+        margin-bottom: -5px;
+    }
+}
+
+@media (max-width: 768px) {
+        .about {
+            margin-top: -40px;
+            clip-path: polygon(0 0, 100% 20%, 100% 90%, 50% 100%, 0 90%);
+            .content {
+                padding-top: 0;
+                margin-top: -10px;
+                .blockFirst {
+                    width: 90%;
+                    p {
+                        text-align: center;
+                    }
+                }
+                .blockSecond {
+                    display: none;
+                }
+            }
+        }
+}
+@media (max-width: 480px) {}

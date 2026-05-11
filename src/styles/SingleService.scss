@@ -1,0 +1,76 @@
+.contentS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2;
+    p {
+        text-align: center;
+        font-size: 12pt;
+        color: #333366;
+    }
+    h3 {
+        font-size: 18pt;
+        color:#333366;
+    }
+    .price {
+        font-size: 16pt;
+        color:#333366;
+        font-family: 'Bauhaus';
+    }
+    .service {
+        width: 400px;
+        margin: 20px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align: center;
+    }
+    .btn:hover {
+        color: #fff;
+    }
+    .logoDesign {
+        background-image: url('../assets/services/logo-design.png');
+    }
+    .webApp {
+        background-image: url('../assets/services/webApp.png');
+    }
+    .landingDesign {
+        background-image: url('../assets/services/landing-design.png');
+    }
+    .multiple {
+        background-image: url('../assets/services/multiple.png');
+    }
+    .promotional {
+        background-image: url('../assets/services/promotional.png');
+    }
+    .infograph {
+        background-image: url('../assets/services/infograph.png');
+    }
+    .presentation {
+        background-image: url('../assets/services/presentation.png');
+    }
+    .illustration {
+        background-image: url('../assets/services/illustration.png');
+    }
+    .brochureFlyer {
+        background-image: url('../assets/services/brochure-flyer.png');
+    }
+    .businessCard {
+        background-image: url('../assets/services/business-card.png');
+    }
+    .bookDesign {
+        background-image: url('../assets/services/book-design.png');
+    }
+    .posterBanner {
+        background-image: url('../assets/services/poster-banner.png');
+    }
+    .landing {
+        background-image: url('../assets/services/landing.png');
+    }
+    .tilda {
+        background-image: url('../assets/services/tilda.png');
+    }
+}

@@ -1,0 +1,135 @@
+    .menu {
+      display: flex;
+      width: 100%;
+      min-height: 60px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(23, 23, 44, 0.5);
+      transition: background 2s ease;
+      position: fixed;
+      z-index: 1000;
+    
+    .burger-menu {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .burger-menu.open .burger-menu span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    
+    .burger-menu.open .burger-menu span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger-menu.open .burger-menu span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .burger-menu span {
+      width: 25px;
+      height: 3px;
+      background: #cdc9e4;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+    }
+    
+    .logo-img {
+      
+      top: 5px;
+      transform: translateX(-50%);
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      gap: 200px;
+      ul {
+        gap: 50px;
+      }
+    }
+
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    a {
+      font-family:'ArsenalRegular';
+      font-size: 14pt;
+      text-decoration: none;
+      color: #cdc9e4;
+    }
+    a:hover {
+      font-weight: bold;
+    }
+  }
+    
+    @media (max-width: 768px) {
+      .menu {
+      .burger-menu {
+        display: flex;
+      }
+    
+      .nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: rgba(23, 23, 44, 0.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 10px 0;
+        transition: background 2s ease;
+      }
+    
+      .nav.active {
+        display: flex;
+      }
+
+      .nav {
+        gap: 10px;
+        ul {
+          gap: 10px;
+        }
+      }
+    
+      .nav-left,
+      .nav-right {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+    }
+  }
+
+  .menu.scrolled {
+    background-color: rgba(23, 23, 54, 0.9);
+    transition: background 2s ease;
+    .nav.active {
+      background-color: rgba(23, 23, 54, 0.9);
+      transition: background 2s ease;
+    }
+  }
+    

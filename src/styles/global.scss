@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'ArsenalBold';
+    src: url('../assets/fonts/ArsenalSC-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ArsenalRegular';
+    src: url('../assets/fonts/ArsenalSC-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bauhaus';
+    src: url('../assets/fonts/Bauhaus1.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eras';
+    src: url('../assets/fonts/Eras.otf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('../assets/fonts/Exo2.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../assets/fonts/Avenir.ttf') format('truetype');
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    font-family: 'Bauhaus', 'Exo';
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.outline {
+    background: transparent;
+    border: 2px solid #333366;
+    color: #333366;
+    backdrop-filter: blur(5px);
+}
+
+.regular {
+    background: #333366;
+    border: none;
+    color: #cdc9e4;
+}
+
+.outline-h {
+    background: transparent;
+    border: 2px solid #cdc9e4;
+    color: #cdc9e4;
+    backdrop-filter: blur(5px);
+}
+
+.regular-h {
+    background: #cdc9e4;
+    border: none;
+    color: #333366;
+}
+
+.btn:hover {
+    background: #333366;
+    border-color: #333366;
+    color: #cdc9e4;
+}
+
+h1,h2, h3 {
+    text-align: center;
+    font-family: 'Bauhaus', 'Exo';
+    font-weight: 100;
+    line-height: 1;
+}
+p {
+    font-family: 'Eras', 'Avenir';
+}
+
+h1 {font-size: 65pt;}
+h2 {font-size: 30pt;}
+.lang-ru .header {
+    h1 {font-size: 60pt;}
+    h2 {font-size: 25pt;}
+}
+.lang-ru .btn {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {
+    
+}

@@ -1,0 +1,44 @@
+.language-switcher {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .language-select {
+    appearance: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #cdc9e4;
+    border: none;
+    cursor: pointer;
+    background-image: url('../assets/icons/dropdown.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  .language-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .language-icons button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .language-icons img {
+    width: 20px;
+    height: 20px;
+    //border-radius: 90%; /* Делает флажки круглыми */
+    transition: transform 0.2s;
+  }
+  
+  .language-icons img:hover {
+    transform: scale(1.1); /* Увеличивает флажок при наведении */
+  }
+  
