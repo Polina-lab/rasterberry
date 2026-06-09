@@ -1,0 +1,319 @@
+// ── WorkCard — раскрывающаяся карточка работы ──────────────────────────────
+
+.work-card {
+    background: #f6f7fa;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 4px 20px rgba(51, 51, 102, 0.1);
+    }
+
+    // Раскрытая карточка занимает всю ширину CSS-грида
+    &--expanded {
+        grid-column: 1 / -1;
+        background: #ffffff;
+        box-shadow: 0 8px 32px rgba(51, 51, 102, 0.12);
+    }
+
+    // ── Preview (всегда видна) ────────────────────────────────────────
+    &__preview {
+        cursor: pointer;
+        position: relative;
+
+        &:hover .work-card__arrow {
+            transform: translateY(3px);
+        }
+    }
+
+    &__thumbnail {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+        transition: height 0.3s ease;
+
+        .work-card--expanded & {
+            height: 320px;
+        }
+    }
+
+    &__preview-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 18px 16px;
+        gap: 12px;
+    }
+
+    &__preview-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        text-align: left;
+    }
+
+    &__category {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 9pt;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: #662d91;
+    }
+
+    &__title {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 15pt;
+        font-weight: 100;
+        color: #333366;
+        text-align: left;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    &__arrow {
+        font-size: 18pt;
+        color: #cdc9e4;
+        transition: transform 0.3s ease, color 0.2s ease;
+        flex-shrink: 0;
+
+        &--open {
+            transform: rotate(180deg);
+            color: #662d91;
+        }
+    }
+
+    // ── Expanded body ─────────────────────────────────────────────────
+    &__body {
+        padding: 24px 28px 30px;
+        border-top: 1px solid #ede9f7;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__description {
+        font-family: 'Eras', 'Avenir';
+        font-size: 12pt;
+        color: #555577;
+        line-height: 1.65;
+        max-width: 800px;
+        margin: 0;
+    }
+
+    // ── Gallery ──────────────────────────────────────────────────────
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 12px;
+
+        &--single {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__gallery-item {
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: zoom-in;
+        background: #f0eef9;
+
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.02);
+        }
+
+        .work-card__gallery--single & img {
+            height: auto;
+            max-height: 520px;
+            object-fit: contain;
+        }
+    }
+
+    // ── Stages label ──────────────────────────────────────────────────
+    &__stages-label {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 13pt;
+        font-weight: 100;
+        color: #333366;
+        text-align: left;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        padding-top: 8px;
+        border-top: 1px solid #ede9f7;
+    }
+}
+
+// ── Timeline этапов ───────────────────────────────────────────────────────
+
+.stages-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.stage-item {
+    display: flex;
+    gap: 20px;
+
+    // ── Левая колонка: номер + вертикальная линия ─────────────────────
+    &__track {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    &__number {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #333366;
+        color: #cdc9e4;
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 13pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__line {
+        width: 2px;
+        flex: 1;
+        min-height: 24px;
+        background: linear-gradient(to bottom, #cdc9e4, #ede9f7);
+        margin: 6px 0;
+    }
+
+    // ── Правая колонка: заголовок + текст ─────────────────────────────
+    &__content {
+        padding-bottom: 28px;
+        flex: 1;
+    }
+
+    &--last &__content {
+        padding-bottom: 4px;
+    }
+
+    &__name {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 12pt;
+        font-weight: 100;
+        color: #662d91;
+        text-align: left;
+        margin: 4px 0 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    &__text {
+        font-family: 'Eras', 'Avenir';
+        font-size: 11pt;
+        color: #555577;
+        line-height: 1.65;
+        margin: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 14px;
+        font-size: 11pt;
+    }
+}
+
+// ── Lightbox ──────────────────────────────────────────────────────────────
+
+.work-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 40, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    cursor: zoom-out;
+    padding: 20px;
+
+    &__inner {
+        position: relative;
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 8px;
+        display: block;
+    }
+
+    &__close {
+        position: absolute;
+        top: -16px;
+        right: -16px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        background: #333366;
+        color: #cdc9e4;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: #662d91;
+        }
+    }
+}
+
+// ── Адаптив ───────────────────────────────────────────────────────────────
+
+@media (max-width: 768px) {
+    .work-card {
+        &__thumbnail {
+            height: 180px;
+
+            .work-card--expanded & {
+                height: 220px;
+            }
+        }
+
+        &__body {
+            padding: 18px 16px 24px;
+        }
+
+        &__gallery {
+            grid-template-columns: 1fr;
+        }
+
+        &__gallery-item img {
+            height: 200px;
+        }
+    }
+
+    .stage-item__content {
+        padding-bottom: 20px;
+    }
+}

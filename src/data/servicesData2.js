@@ -1,4 +1,4 @@
-const servicesData2 = [
+/*const servicesData2 = [
     {
       id: "digital-design",
       services: [
@@ -92,4 +92,160 @@ const servicesData2 = [
   ];
   
   export default servicesData2;
-  
+  */
+
+  const servicesData2 = [
+  /*{
+    id: "packages",
+    services: [
+      {
+        id: "startup-package",
+        background: "startupPackage service",
+        price: "from 600 €",
+        badge: "popular",
+      },
+      {
+        id: "website-package",
+        background: "websitePackage service",
+        price: "from 500 €",
+      },
+      {
+        id: "business-package",
+        background: "businessPackage service",
+        price: "from 1400 €",
+      },
+      {
+        id: "social-package",
+        background: "socialPackage service",
+        price: "250–300 €",
+      },
+    ],
+  },*/
+  {
+    id: "branding-identity",
+    services: [
+      {
+        id: "logo-design",
+        background: "logoDesign service",
+        price: "70 €",
+      },
+      {
+        id: "brand-identity",
+        background: "brandIdentity service",
+        price: "250–300 €",
+      },
+      {
+        id: "business-card",
+        background: "businessCard service",
+        price: "40 €",
+      },
+      {
+        id: "illustration",
+        background: "illustration service",
+        price: "80 €",
+      },
+    ],
+  },
+  {
+    id: "web-design",
+    services: [
+      {
+        id: "landing-page",
+        background: "landingDesign service",
+        price: "400 €",
+      },
+      {
+        id: "multi-page",
+        background: "multiPage service",
+        price: "1000 €",
+      },
+      {
+        id: "tilda",
+        background: "tilda service",
+        price: "300 €",
+      },
+      {
+        id: "web-app-design",
+        background: "webApp service",
+        price: "2000 €",
+      },
+      {
+        id: "seo-setup",
+        background: "seo service",
+        price: "by agreement",
+      },
+      {
+        id: "google-ads",
+        background: "googleAds service",
+        price: "by agreement",
+      },
+    ],
+  },
+  {
+    id: "social-marketing",
+    services: [
+      {
+        id: "social-visuals",
+        background: "socialVisuals service",
+        price: "50–70 €",
+      },
+      {
+        id: "ad-banner",
+        background: "adBanner service",
+        price: "100–200 €",
+      },
+      {
+        id: "promotional",
+        background: "promotional service",
+        price: "200 €",
+      },
+      {
+        id: "infograph",
+        background: "infograph service",
+        price: "100 €",
+      },
+      {
+        id: "presentation",
+        background: "presentation service",
+        price: "150 €",
+      },
+    ],
+  },
+  {
+    id: "graphic-print",
+    services: [
+      {
+        id: "poster-banner",
+        background: "posterBanner service",
+        price: "150 €",
+      },
+      {
+        id: "brochure-flyer",
+        background: "brochureFlyer service",
+        price: "250 €",
+      },
+      {
+        id: "book-design",
+        background: "bookDesign service",
+        price: "400 €",
+      },
+    ],
+  },
+  {
+    id: "photography",
+    services: [
+      {
+        id: "product-photography",
+        background: "photography service",
+        price: "90–100 € / hr",
+      },
+      {
+        id: "visual-content",
+        background: "visualContent service",
+        price: "by agreement",
+      },
+    ],
+  },
+];
+
+export default servicesData2;

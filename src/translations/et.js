@@ -1,10 +1,12 @@
 const et = {
     header: "Tere tulemast Rasterberry.",
+    works: "Portfolio",
     links: {
         services: "Teenused",
         works: "Meie Tööd",
         about: "Meist",
         contact: "Kontakt",
+        portfolio: "Portfolio",
         resources: "Ressursid",
         legal: "Õiguslik",
         terms: "Teenuse tingimused",
@@ -27,7 +29,7 @@ const et = {
         get: "Võta ühendust",
         book: "Broneeri",
         send: "Saada",
-    },
+    },/*
     servicesMenu:
         {
             "digital-design": {
@@ -107,7 +109,208 @@ const et = {
                 },
             },
 
+    },*/
+    packages: {
+  title: "Paketid",
+  subtitle: "Terviklikud lahendused sinu ettevõttele",
+  badge: "Populaarseim",
+  cta: "Alusta",
+
+  items: {
+    "startup-package":  { title: "Startup pakett" },
+    "website-package":  { title: "Veebilehe pakett" },
+    "business-package": { title: "Business pakett" },
+    "social-package":   { title: "Sisu & sotsiaalmeedia" },
+    "monthly-support":  { title: "Kuutugi" },
+  },
+
+  includes: {
+    "logo-branding":       "Logo ja brändi põhielemendid",
+    "landing-page-site":   "Maandumisleht või väike veebileht",
+    "social-visuals":      "Sotsiaalmeedia visuaalid",
+    "cms-setup":           "CMS-i seadistamine",
+    "basic-seo":           "SEO esmane seadistus",
+
+    "custom-design":       "Kohandatud disain",
+    "tilda-wordpress":     "Tilda või WordPress",
+    "mobile-friendly":     "Mobiilisõbralik",
+    "basic-seo-setup":     "SEO põhiseadistus",
+
+    "brand-audit":         "Brändi ja veebilehe audit",
+    "full-redesign":       "Täielik disaini uuendus",
+    "seo-improvements":    "SEO parandused",
+    "social-materials":    "Sotsiaalmeedia ja turundusmaterjalid",
+
+    "feed-posts-stories":  "Postituste ja stories'te disain",
+    "promo-banners":       "Reklaambannerid",
+    "branded-templates":   "Bränditud mallid",
+
+    "design-updates":      "Disaini uuendused",
+    "website-support":     "Veebilehe tugi",
+    "content-creation":    "Sisu loomine",
+  },
+},
+    servicesMenu: {
+  "packages": {
+    title: "Packages",
+    services: {
+      "startup-package": {
+        title: "Startup Package",
+        description:
+          "Everything a new business needs to launch with a professional presence — from logo and branding to a working website and social media visuals. Designed for entrepreneurs and startups who want to build a strong foundation fast.",
+      },
+      "website-package": {
+        title: "Website Package",
+        description:
+          "A clean, functional, mobile-friendly website for showcasing your services or products. Built on Tilda or WordPress, tailored to your brand, and ready to go live quickly.",
+      },
+      "business-package": {
+        title: "Business Package",
+        description:
+          "For established businesses ready to refresh their brand and online presence. Includes a full audit, redesign, SEO improvements, and updated marketing visuals — giving your business a renewed competitive edge.",
+      },
+      "social-package": {
+        title: "Content & Social Package",
+        description:
+          "A set of professional, on-brand visual assets for your social media channels — Instagram, Facebook, LinkedIn, and more. Includes feed posts, stories, and promo banners, designed as a coherent visual system.",
+      },
+      "monthly-support": {
+      title: "Monthly Support",
+        description: "An ongoing design and website support service for businesses that need regular updates, content creation, and technical assistance. Perfect for companies looking to maintain a fresh online presence without the hassle of managing it themselves.",
     },
+    },
+  },
+ 
+  "branding-identity": {
+    title: "Branding & Identity",
+    services: {
+      "logo-design": {
+        title: "Logo design",
+        description:
+          "A unique, memorable logo crafted around your brand's values and audience. Delivered in all standard formats (SVG, PNG, PDF) with light and dark variants.",
+      },
+      "brand-identity": {
+        title: "Brand identity package",
+        description:
+          "A complete visual identity system: logo, colour palette, typography, iconography, and usage guidelines — everything your team needs to keep your brand consistent across all touchpoints.",
+      },
+      "business-card": {
+        title: "Business card",
+        description:
+          "A professional, print-ready business card design that makes a lasting first impression — aligned with your brand identity and ready for both digital and physical distribution.",
+      },
+      "illustration": {
+        title: "Custom illustration",
+        description:
+          "One-of-a-kind hand-crafted or digitally created illustrations tailored to your brand or campaign. Adds a personal, creative touch to websites, marketing materials, and branding.",
+      },
+    },
+  },
+ 
+  "web-design": {
+    title: "Web Design & Development",
+    services: {
+      "landing-page": {
+        title: "Custom landing page",
+        description:
+          "A focused, conversion-optimised single page tailored to a specific campaign, product, or service. Designed to engage visitors and drive action.",
+      },
+      "multi-page": {
+        title: "Multi-page website",
+        description:
+          "A fully structured multi-page website covering all your business needs — Home, About, Services, Blog, and Contact — designed for a clear and engaging visitor journey.",
+      },
+      "tilda": {
+        title: "Website on Tilda",
+        description:
+          "A fast, flexible, and visually polished website built on the Tilda platform. Great for small businesses, freelancers, and startups who need an easy-to-manage online presence.",
+      },
+      "web-app-design": {
+        title: "Web application design",
+        description:
+          "UX/UI design for dashboards, SaaS platforms, and custom web tools — focused on usability, clarity, and an interface your users will actually enjoy. Delivered as a full interactive prototype.",
+      },
+      "seo-setup": {
+        title: "Basic SEO setup",
+        description:
+          "On-page SEO foundations: meta tags, heading structure, image optimisation, page speed audit, sitemap creation, and Google Search Console configuration.",
+      },
+      "google-ads": {
+        title: "Google Ads assistance",
+        description:
+          "Setup and configuration of Google Ads campaigns — targeting, ad copy, creative visuals, and conversion tracking. Ideal for businesses advertising online for the first time.",
+      },
+    },
+  },
+ 
+  "social-marketing": {
+    title: "Social Media & Marketing",
+    services: {
+      "social-visuals": {
+        title: "Social media visuals",
+        description:
+          "Individual post, story, or banner design for Instagram, Facebook, LinkedIn, or other channels — crafted to match your brand style and capture attention in the feed.",
+      },
+      "ad-banner": {
+        title: "Advertising banner",
+        description:
+          "Static or animated digital banners for online advertising campaigns. Delivered in multiple standard sizes — ready for Google Ads, Meta Ads, or display networks.",
+      },
+      "promotional": {
+        title: "Promotional materials",
+        description:
+          "Eye-catching brochures, flyers, and event materials designed for both print and digital distribution — aligned with your brand and built to communicate clearly.",
+      },
+      "infograph": {
+        title: "Infographics & visual content",
+        description:
+          "Data-driven visuals that turn complex information into something clear, memorable, and shareable — for web, social media, presentations, or reports.",
+      },
+      "presentation": {
+        title: "Presentations",
+        description:
+          "Professionally designed slide decks for pitches, investor meetings, conferences, or internal use — visually compelling, on-brand, and built to make an impact.",
+      },
+    },
+  },
+ 
+  "graphic-print": {
+    title: "Graphic & Print Design",
+    services: {
+      "poster-banner": {
+        title: "Poster & banner",
+        description:
+          "Striking posters and large-format banners for events, promotions, or advertising — bold visuals, clear messaging, and print-ready files.",
+      },
+      "brochure-flyer": {
+        title: "Brochure & flyer",
+        description:
+          "Brand-aligned print and digital brochures and flyers that communicate your services or offers clearly and engagingly — for events, campaigns, or general distribution.",
+      },
+      "book-design": {
+        title: "Book design",
+        description:
+          "Full layout design for printed books — fiction, non-fiction, or children's books. Includes cover design, interior layout, typography, and print-ready export.",
+      },
+    },
+  },
+ 
+  "photography": {
+    title: "Photography & Content",
+    services: {
+      "product-photography": {
+        title: "Product photography",
+        description:
+          "Clean, professional product photos for your website, online shop, or marketing materials — shot and edited to showcase your products at their best.",
+      },
+      "visual-content": {
+        title: "Visual content creation",
+        description:
+          "Photo and visual assets tailored for social media, advertising, and brand storytelling — scope and pricing agreed per project.",
+      },
+    },
+  },
+},
     about: {
         header: "Meist",
         description: "Rasterberry spetsialiseerub laias valikus digitaalsetele disainiteenustele, alates veebidisainist ja mobiilidisainist kuni brändingu, kasutajakogemuse (UX) kujundamise ja digitaalse turunduseni. Kas alustate uue brändiga või soovite värskendada olemasolevat, pakume kohandatud disainiteenuseid, et ellu viia teie visioon.",
@@ -119,16 +322,59 @@ const et = {
             3: {text: "Tulemusele suunatud lahendused"},
         }
     },
+    ourWorks: {
+  title: "Meie tööd",
+  subtitle: "Valik meie hiljutistest projektidest",
+  seeAll: "Vaata kõiki töid",
+},
+
+worksPage: {
+  title: "Portfoolio",
+  empty: "Selles kategoorias pole veel töid",
+  stagesTitle: "Töö protsess",
+  collapse: "Sulge",
+  viewWork: "Vaata projekti",
+  clickToEnlarge: "Klõpsa suurendamiseks",
+
+  categories: {
+    all:              "Kõik",
+    "branding":       "Bränding",
+    "web-design":     "Veebidisain",
+    "graphic-design": "Graafiline disain",
+    "print":          "Trükidisain",
+    "social-media":   "Sotsiaalmeedia",
+    "photography":    "Fotograafia",
+  },
+
+  stages: {
+    planning:       "Planeerimine",
+    implementation: "Uurimine ja teostus",
+    draft:          "Esialgne variant ja kinnitamine",
+    testing:        "Testimine ja täiustamine",
+    result:         "Tulemus ja edasised sammud",
+  },
+},
     works: {
-        1: {
-            title: 'Sarapuu, est',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
+                1: {
+            title: "Sarapuu Brand Identity",
+            description: "A natural, earthy brand identity for a local berry farm.",
+            stages: {
+            planning:       "The client needed a warm, natural brand reflecting their organic berry farm. Key goal: stand out at local markets and online.",
+            implementation: "Researched botanical and folk-art references. Defined a warm earthy palette, hand-drawn style, and serif typography.",
+            draft:          "Presented 3 logo directions. Client chose the berry cluster mark. Refined proportions and colour balance over two rounds.",
+            result:         "Delivered full brand: logo, colour system, label template, business card. Client now uses assets across packaging and social media.",
+            },
         },
         2: {
-            title: "Smart Bills",
-            description: "Creating the Logo Design, Branding, responsive landing page and multiple page web application for bill generation app.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
+            title: "Above Space — Landing Page",
+            description: "A clean, conversion-focused landing page for a co-working space.",
+            stages: {
+            planning:       "Client needed a landing page to drive bookings for their new co-working space. Target audience: freelancers and small teams.",
+            implementation: "Defined page structure, chose Tilda as platform. Wireframed sections: hero, benefits, pricing, testimonials, CTA.",
+            draft:          "Built first version in Tilda. Client approved layout; refined hero typography and CTA colour contrast.",
+            testing:        "Tested on mobile and tablet. Adjusted image breakpoints and form behaviour. Verified all links and form submissions.",
+            result:         "Page went live and drove 40+ enquiries in the first month. Client has ongoing support for content updates.",
+            },
         },
         3: {
             title: "Above Space branding",

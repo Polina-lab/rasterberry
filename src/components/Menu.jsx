@@ -43,7 +43,7 @@ const Menu = () => {
             <nav className={`nav ${isOpen ? "active" : ""}`}>
                 <ul className="nav-left">
                     <li><Link to="/#services">{t('links.services')}</Link></li>
-                    <li><Link to="/#our-works">{t('links.works')}</Link></li>
+                    <li><Link to="/works">{t('links.works')}</Link></li>
                 </ul>
                 <ul className="nav-right">
                     <li><Link to="/#about">{t('links.about')}</Link></li>

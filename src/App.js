@@ -4,12 +4,15 @@ import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react
 import Menu from './components/Menu';
 import Header from './components/Header';
 import Services from './components/Services';
+import Packages from "./components/Packages";
 //import SingleService from './components/SingleService';
 import OurWorks from './components/OurWorks';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import OurWorksDetail from './components/OurWorksDetail';
+
+import WorksPage from './pages/WorksPage';
 
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
@@ -82,6 +85,7 @@ const App = () => {
               element={
                 <>
                   <Header />
+                  <Packages />
                   <Services
                     sections={servicesData}
                     activeSection={activeSection}
@@ -99,6 +103,7 @@ const App = () => {
               }
             />
             {/* Отдельные страницы */}
+            <Route path="/works" element={<WorksPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/cookies-policy" element={<CookiesPolicy />} />

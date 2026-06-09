@@ -1,96 +1,294 @@
+// ── Оверлей ────────────────────────────────────────────────────────────────
+
 .project-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    background: rgba(20, 20, 40, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
-  }
-  .project-details {
-    position: relative;
-    width: 80%;
-    max-width: 900px;
-    background: white;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+// ── Карточка детали ────────────────────────────────────────────────────────
+
+.project-details {
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    max-height: 90vh;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px 32px;
     overflow-y: auto;
-    max-height: 90%;
-    text-align: center;
-    color: #333366;
-  }
-  
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #cdc9e4;
-    transition: all 0.2s ease;
-  }
-  
-  .close-button:hover {
-    transform: scale(1.2);
-    color: #333366;
-  }
-  
- 
-  .carousel-container {
+    box-shadow: 0 16px 48px rgba(51, 51, 102, 0.18);
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
+    flex-direction: column;
+    gap: 24px;
 
-  .carousel-container.single .carousel-item {
-    flex: 1 1 100%;
-  }
+    // Кастомный скроллбар
+    scrollbar-width: thin;
+    scrollbar-color: #cdc9e4 transparent;
 
-  .carousel-container.multiple .carousel-item {
-    flex: 1 1 calc(50% - 10px);
-    max-width: calc(50% - 10px);
-  }
+    &::-webkit-scrollbar { width: 4px; }
+    &::-webkit-scrollbar-track { background: transparent; }
+    &::-webkit-scrollbar-thumb { background: #cdc9e4; border-radius: 4px; }
 
-  
-  
-  .carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 5px;
-  }
- 
-  .project-overlay::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3), transparent);
-    z-index: -1;
-  }
-
-  @media (max-width: 768px) {
-    .carousel-container.multiple .carousel-item {
-      flex: 1 1 100%;
-      max-width: 100%;
+    // ── Заголовок ──────────────────────────────────────────────────────
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding-right: 32px; // отступ под кнопку ×
     }
-  }
+
+    &__category {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 10pt;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #662d91;
+    }
+
+    h2 {
+        font-size: 26pt;
+        font-weight: 100;
+        color: #333366;
+        margin: 0;
+        text-align: center;
+    }
+
+    // ── Описание ───────────────────────────────────────────────────────
+    &__description {
+        font-family: 'Eras', 'Avenir';
+        font-size: 12pt;
+        color: #555577;
+        line-height: 1.65;
+        text-align: center;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+}
+
+// ── Кнопка закрыть ─────────────────────────────────────────────────────────
+
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #f0eef9;
+    color: #cdc9e4;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    line-height: 1;
+
+    &:hover {
+        background: #333366;
+        color: #cdc9e4;
+        transform: scale(1.1);
+    }
+}
+
+// ── Галерея ────────────────────────────────────────────────────────────────
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+
+    &--single {
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: zoom-in;
+        background: #f6f7fa;
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover img { transform: scale(1.03); }
+    }
+
+    &--single &__item img {
+        height: auto;
+        max-height: 440px;
+        object-fit: contain;
+    }
+}
+
+// ── Этапы ──────────────────────────────────────────────────────────────────
+
+.project-stages {
+    border-top: 1px solid #ede9f7;
+    padding-top: 20px;
+
+    &__label {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 12pt;
+        font-weight: 100;
+        color: #333366;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin: 0 0 18px;
+    }
+}
+
+// ── Таймлайн — те же стили что в WorkCard ─────────────────────────────────
+// (дублируем чтобы компонент был самодостаточным)
+
+.stages-timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.stage-item {
+    display: flex;
+    gap: 18px;
+
+    &__track {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    &__number {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #333366;
+        color: #cdc9e4;
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 12pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    &__line {
+        width: 2px;
+        flex: 1;
+        min-height: 20px;
+        background: linear-gradient(to bottom, #cdc9e4, #ede9f7);
+        margin: 5px 0;
+    }
+
+    &__content {
+        padding-bottom: 22px;
+        flex: 1;
+    }
+
+    &--last &__content { padding-bottom: 4px; }
+
+    &__name {
+        font-family: 'Bauhaus', 'Exo';
+        font-size: 11pt;
+        font-weight: 100;
+        color: #662d91;
+        text-align: left;
+        margin: 4px 0 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    &__text {
+        font-family: 'Eras', 'Avenir';
+        font-size: 11pt;
+        color: #555577;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 10pt;
+    }
+}
+
+// ── Лайтбокс ───────────────────────────────────────────────────────────────
+
+.work-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 20, 40, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    cursor: zoom-out;
+    padding: 20px;
+
+    &__inner {
+        position: relative;
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+
+    img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 8px;
+        display: block;
+    }
+
+    &__close {
+        position: absolute;
+        top: -14px;
+        right: -14px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: none;
+        background: #333366;
+        color: #cdc9e4;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s ease;
+
+        &:hover { background: #662d91; }
+    }
+}
+
+// ── Адаптив ────────────────────────────────────────────────────────────────
+
+@media (max-width: 768px) {
+    .project-details {
+        padding: 24px 18px 24px;
+        max-height: 95vh;
+
+        h2 { font-size: 20pt; }
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+
+        &__item img { height: 180px; }
+    }
+}
