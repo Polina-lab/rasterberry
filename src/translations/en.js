@@ -12,7 +12,6 @@ const en = {
         privacy: "Privacy Policy",
         cookie: "Cookies Policy",
         data: "Data Processing",
-        refund: "",
         faq: "FAQ",
         refund: "Refund and Complaints Policy",
         social: "Social Media & Contacts",
