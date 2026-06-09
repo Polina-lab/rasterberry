@@ -38,7 +38,7 @@ const Menu = () => {
                 <span></span>
             </button>
             <div className="logo">
-                <Link to="/#main"><img src={logo} alt="Logo" className="logo-img" /></Link>
+                <Link to="/#main"><img alt="Logo" src={logo} className="logo-img" /></Link>
             </div>
             <nav className={`nav ${isOpen ? "active" : ""}`}>
                 <ul className="nav-left">

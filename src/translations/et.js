@@ -1,6 +1,5 @@
 const et = {
     header: "Tere tulemast Rasterberry.",
-    works: "Portfolio",
     links: {
         services: "Teenused",
         works: "Meie Tööd",

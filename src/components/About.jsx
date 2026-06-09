@@ -12,7 +12,7 @@ const About = ({ features }) => {
         <section id="about" className="about">
             <div className="content">
                 <div className="blockFirst">
-                    <img className="line-about" src={lineAbout} />
+                    <img alt="Line" className="line-about" src={lineAbout} />
                 
                     <h2>{t('about.header')}</h2>
                     <p>{t('about.description')}</p>
@@ -34,7 +34,7 @@ const About = ({ features }) => {
 
                 <div className="blockSecond">
                     <div className="image">
-                        <img className="aboutIMG" />
+                        <img alt="About" className="aboutIMG" />
                     </div>
                     <div className="logo"></div>
                 </div>

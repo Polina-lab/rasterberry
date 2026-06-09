@@ -51,7 +51,7 @@ const OurWorksDetail = ({ work, onClose }) => {
                   onClick={() => setLightboxImg(img)}
                   title={t("worksPage.clickToEnlarge")}
                 >
-                  <img src={img} alt={`${title} ${i + 1}`} />
+                  <img alt={`${title} ${i + 1}`} src={img} />
                 </div>
               ))}
             </div>
@@ -113,7 +113,7 @@ const OurWorksDetail = ({ work, onClose }) => {
           onClick={() => setLightboxImg(null)}
         >
           <div className="work-lightbox__inner">
-            <img src={lightboxImg} alt={title} />
+            <img alt={title} src={lightboxImg} />
             <button
               className="work-lightbox__close"
               onClick={() => setLightboxImg(null)}

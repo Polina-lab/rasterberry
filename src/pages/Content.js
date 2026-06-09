@@ -16,7 +16,7 @@ const Content = ({header, links}) => {
 
     return (
         <div className='allContent'>
-            <img className="line-about-end" src={lineAboutEnd} />
+            <img alt="Line" className="line-about-end" src={lineAboutEnd} />
             <main className='mainContent'>
 
                 <Sidebar header={header} links={links}/>

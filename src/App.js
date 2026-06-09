@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Route, Routes } from 'react-router-dom';
 
 import Menu from './components/Menu';
 import Header from './components/Header';
@@ -32,8 +32,7 @@ import useScrollToHash from './hooks/useScrollToHash';
 
 
 const App = () => {
-
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   const [activeSection, setActiveSection] = useState(0);
 

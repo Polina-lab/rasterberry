@@ -22,7 +22,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <h2>Rasterberry</h2>
-            <img className="line-before" src={lineBefore} />
+            <img alt="Line" className="line-before" src={lineBefore} />
             <div className='content'>
                 <h3>{t('footer')}</h3>
                 <button
@@ -32,7 +32,7 @@ const Footer = () => {
                 </button>
                 <div className="container">
                     <div className='logo-footer'>
-                        <img src={logoFooter} alt="logo footer"/>
+                        <img alt="Logo" src={logoFooter} />
                         <h3>{t('berry')}</h3>
                     </div>
                     <div className='menu-footer'>
@@ -59,19 +59,19 @@ const Footer = () => {
                         <div className="soc-med">
                                 <ul>
                                     <li className='link-header'>{t('links.social')}</li>
-                                    <li><a href="#" ><img src={inst} />@rasterberry</a></li>
-                                    <li><a href="#" ><img src={mail} />info@rasterberry.com</a></li>
-                                    <li><a href="#" ><img src={phone} />+372 5837 85 73</a></li>
-                                    <li><a href="#" ><img src={behance} />@rasterberry</a></li>
+                                    <li><a href="https://www.instagram.com/rasterberry/" target="_blank" rel="noopener noreferrer"><img alt="Instagram" src={inst} />@rasterberry</a></li>
+                                    <li><a href="mailto:info@rasterberry.com"><img alt="Email" src={mail} />info@rasterberry.com</a></li>
+                                    <li><a href="tel:+37258378573"><img alt="Phone" src={phone} />+372 5837 85 73</a></li>
+                                    <li><a href="https://www.behance.net/rasterberry" target="_blank" rel="noopener noreferrer"><img alt="Behance" src={behance} />@rasterberry</a></li>
                                 </ul>
                         </div>
                     </div>
                 </div>
-                <img className="line-footer" src={lineFooter} />
+                <img alt="Line" className="line-footer" src={lineFooter} />
                 <div className='after-line'>
                     
                     <p>{t('copyrights')}</p>
-                    <div className='back-top'><a href="#main"><span>{t('links.backTop')}</span><img src={backTop} /></a></div>
+                    <div className='back-top'><a href="#main"><span>{t('links.backTop')}</span><img alt="Back to Top" src={backTop} /></a></div>
                 </div>
             </div>
             

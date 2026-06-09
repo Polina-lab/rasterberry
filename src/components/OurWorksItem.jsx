@@ -8,7 +8,7 @@ const OurWorksItem = ({ work, onClick }) => {
 
   return (
     <div className="work-item" onClick={() => onClick(work.id)}>
-      <img src={work.thumbnail} alt={work.title} className="work-thumbnail" />
+      <img alt={work.title} src={work.thumbnail} className="work-thumbnail" />
       <div className="container">
         <h3>{t(`works.${work.id}.title`)}</h3>
         <p>{t(`works.${work.id}.description`)}</p>

@@ -138,7 +138,7 @@ const Contact = ({ contactData={}, onCheckboxChange }) => {
 
     return (
         <section id="contact" className="contact">
-            <img className="line-contact" src={lineContact} />
+            <img alt="Line" className="line-contact" src={lineContact} />
             <h2>{t('contact.header')}</h2>
             <form className="contact-form form-fields">
             <div className="form-row">

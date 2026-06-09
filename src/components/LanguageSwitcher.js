@@ -19,17 +19,17 @@ const LanguageSwitcher = () => {
       <div className="language-icons">
         {language !== 'en' && (
             <button onClick={() => handleLanguageChange('en')}>
-                <img src={en} alt="English" />
+                <img alt="English" src={en} />
             </button>
         )}
         {language !== 'et' && (
             <button onClick={() => handleLanguageChange('et')}>
-                <img src={et} alt="Estonian" />
+                <img alt="Estonian" src={et} />
             </button>
         )}
         {language !== 'ru' && (
             <button onClick={() => handleLanguageChange('ru')}>
-                <img src={ru} alt="Russian" />
+                <img alt="Russian" src={ru} />
             </button>
         )}
       </div>

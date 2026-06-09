@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Services.scss';
 import line from '../assets/lineServices.png';
 import SingleService from './SingleService';
@@ -16,7 +16,7 @@ const Services = ({ sections, activeSection, setActiveSection, onBookClick}) => 
 
     return (
         <section id="services" className="services">
-            <img className="line-about-end" src={lineAboutEnd} />
+            <img alt="Line" className="line-about-end" src={lineAboutEnd} />
             <h2>{t('services.header')}</h2>
             <nav>
                 <ul>
@@ -31,7 +31,7 @@ const Services = ({ sections, activeSection, setActiveSection, onBookClick}) => 
         ))}
                 </ul>
             </nav>
-            <div className="line"><img src={line} alt="Line" /></div>
+            <div className="line"><img alt="Line" src={line} /></div>
             <SingleService
                 services={servicesData[activeSection].services}
                 id={activeSection}

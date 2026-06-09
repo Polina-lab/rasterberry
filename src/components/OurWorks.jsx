@@ -13,7 +13,7 @@ const OurWorks = ({ works, onWorkClick }) => {
 
     return (
         <section id="our-works" className="our-works">
-            <img className="line-about-end" src={lineAboutEnd} alt="" aria-hidden="true" />
+            <img alt="Line" className="line-about-end" src={lineAboutEnd} aria-hidden="true" />
 
             <h2>{t('ourWorks.title')}</h2>
             <p className="our-works__subtitle">{t('ourWorks.subtitle')}</p>

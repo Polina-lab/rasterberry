@@ -19,7 +19,7 @@ const OurWorksDetail = ({ work, onClose }) => {
         <div className={`carousel-container ${work.images.length === 1 ? "single" : "multiple"}`}>
             {work.images.map((image, index) => (
                 <div key={index} className="carousel-item">
-                    <img src={image} alt={`Project ${t(`works.${work.id}.title`)} ${index + 1}`} />
+                    <img alt={`Project ${t(`works.${work.id}.title`)} ${index + 1}`} src={image} />
                 </div>
             ))}
         </div>

@@ -9,12 +9,12 @@ const Packages = () => {
 
   return (
     <section className="packages">
-      <img className="line-about-end" src={lineAboutEnd} />
+      <img alt="Line" className="line-about-end" src={lineAboutEnd} />
       <h2>{t("packages.title")}</h2>
       <p className="packages__subtitle">{t("packages.subtitle")}</p>
 
       <div className="packages__line">
-        <img src="/assets/line.svg" alt="" aria-hidden="true" />
+        <img alt="Line" src="/assets/line.svg" aria-hidden="true" />
       </div>
 
       <div className="packages__grid">
