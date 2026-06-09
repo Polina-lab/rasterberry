@@ -4,6 +4,10 @@ import packagesData from "../data/packagesData";
 import lineAboutEnd from '../assets/lineAboutEnd.png';
 import "../styles/Packages.scss";
 
+/*<div className="packages__line">
+        <img alt="Line" src="/assets/line.svg" aria-hidden="true" />
+      </div>*/
+
 const Packages = () => {
   const { t } = useLanguage();
 
@@ -12,10 +16,6 @@ const Packages = () => {
       <img alt="Line" className="line-about-end" src={lineAboutEnd} />
       <h2>{t("packages.title")}</h2>
       <p className="packages__subtitle">{t("packages.subtitle")}</p>
-
-      <div className="packages__line">
-        <img alt="Line" src="/assets/line.svg" aria-hidden="true" />
-      </div>
 
       <div className="packages__grid">
         {packagesData.map((pkg) => (
