@@ -1,169 +1,314 @@
-.about {
-    position: relative;
-    margin-top: -50px;
-    background: linear-gradient(to bottom,
-    rgba(205, 201, 228, 0.3) 5%,
-    /*#333366 20%,
-    #333366 80%,*/
-    #333366 25%,
-    #333366 75%,
-    rgba(205, 201, 228, 0.3) 95%),
-    #333366;
-    //background: #333366;
-    clip-path: polygon(0 0, 100% 40%, 100% 90%, 50% 100%, 0 90%);
-    display: flex;
-    overflow: hidden;
-    //justify-content: space-around;
-    //align-items: 'center';
-    z-index: 100;
-    .content {
-        display: flex;
-        //display: flex;
-        //justify-content: space-around;
-        padding: 20px;
-        border-radius: 8px;
-        z-index: 1;
-        color: #cdc9e4;
-        .line-about {
-            width: 15px;
-            height: 80px;
-            z-index: 1;
-        }
-        .blockFirst {
-            margin: auto;
-            margin-bottom: 10px;
-            //margin-bottom: auto;
-            padding: 50px 10px 20px;
-            //display: inline;
-            width: 30%;
-            //margin-right: auto;
-            text-align: center;
-        }
-        .blockSecond {
-            //position: relative;
-            margin-top: auto;
-            margin-bottom: 5%;
-            padding-left: 10px;
-            width: 45%;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            //margin-left: auto;
-            .image {
-                background: #333366;
-                clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
-                padding: 20px 0;
-                //margin-left: 5%;
-                background-image: url('../assets/about-img3.png');
-                width: 400px;
-                height: 400px;
-                background-size: cover;
-                //background-position: right;
-                background-position: right; 
-                background-repeat: no-repeat;
-                opacity: 0.4;
-            }
-            .logo {
-                //overflow: hidden;
-                margin-top: 10%;
-                background-image: url('../assets/logo-about.png');
-                width: 100px;
-                height: 50px;
-                background-size: contain;
-                background-position: center; 
-                background-repeat: no-repeat;
-            }
-            /*.aboutIMG {
-                background-image: url('../assets/about-img2.png');
-                width: 150px;
-                height: 200px;
-                background-size: contain;
-                background-position: center;
-                background-position: center; 
-                background-repeat: no-repeat;
-            }*/
-        }
-        .btn {
-            margin: 20px 0;
-        }
-        .outline-h:hover {
-            background: #cdc9e4;
-            color: #333366;
-            border: 2px solid #cdc9e4;
-        }
-        p {
-            color:#cdc9e4;
-            text-align: left;
-        }
-        p.capsL {
-            font-variant: small-caps;
-            text-align: center;
-        }
-        .text-container {
-            justify-content: center;
-            display: flex; 
-            align-items: center;
-            gap: 8px;
-          }
-        .icon {
-            width: 35px;
-            height: 30px;
-            background-size: contain;
-            background-position: center;
-            background-position: center; 
-            background-repeat: no-repeat;
-            //border-radius: 50%;
-        }
-        .iconCreative {
-            background-image: url('../assets/icons/creative.png');
-        }
-        .iconTime {
-            background-image: url('../assets/icons/time.png');
-        }
-        .iconPartners {
-            background-image: url('../assets/icons/partners.png');
-        }
-        .iconResult {
-            background-image: url('../assets/icons/result.png');
-        }
-        .dot {
-            width: 40px;
-            height: 10px;
-            background-image: url('../assets/icons/dot.png');
-            background-size: contain; 
-            background-position: center; 
-            background-repeat: no-repeat;
-        }
-    }
-    h2 {
-        font-weight: 50;
-        color: #cdc9e4;
-        margin: 0 -10px;
-    }
-    h3 {
-        font-size: 18pt;
-        color:#cdc9e4;
-        margin-bottom: -5px;
-    }
+$brand-primary: #333366;
+$brand-light:   #cdc9e4;
+$brand-accent:  #662d91;
+
+.about-wrapper {
+  margin-top: -50px;
+  position: relative;
 }
 
-@media (max-width: 768px) {
-        .about {
-            margin-top: -40px;
-            clip-path: polygon(0 0, 100% 20%, 100% 90%, 50% 100%, 0 90%);
-            .content {
-                padding-top: 0;
-                margin-top: -10px;
-                .blockFirst {
-                    width: 90%;
-                    p {
-                        text-align: center;
-                    }
-                }
-                .blockSecond {
-                    display: none;
-                }
-            }
-        }
+// ── Section ───────────────────────────────────────────────────────────────────
+.about {
+  position: relative;
+  background: linear-gradient(135deg,
+    $brand-primary 0%,
+    lighten($brand-primary, 6%) 60%,
+    $brand-accent 100%
+  );
+  clip-path: polygon(0 0, 100% 40%, 100% 90%, 50% 100%, 0 90%);
+  overflow: hidden;
+  position: relative; // без этого absolute-дети крепятся к wrapper, не к .about
+  z-index: 100;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 280px;
+    height: 280px;
+    background: rgba(102, 45, 145, 0.25);
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../assets/blueberry.jpg') center / cover no-repeat;
+    opacity: 0.06;
+    border-radius: 24px;
+    pointer-events: none;
+  }
+
+  h2 {
+    font-size: 34pt;
+    font-weight: 50;
+    color: $brand-light;
+    margin: 0 0 16px;
+    text-align: center; // линия центрируется над h2
+  }
+
+  h3 {
+    font-size: 16pt;
+    color: $brand-light;
+    margin: 22px 0 12px;
+  }
 }
-@media (max-width: 480px) {}
+
+// Линия — абсолютно позиционирована внутри .about,
+// top выравнивает её точно над h2 (с учётом padding__content).
+// overflow:hidden на .about обрежет всё что выходит за видимую область.
+.about__line {
+  position: absolute;
+  // left column центр = 50% - 550px (половина max-width) + 60px (padding) + 230px (половина колонки)
+  // = calc(50% - 260px), translateX(-50%) центрирует 15px картинку на этой точке
+  top: 80px;
+  left: calc(50% - 260px);
+  transform: translateX(-50%);
+  width: 15px;
+  height: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+// ── Layout ────────────────────────────────────────────────────────────────────
+.about__content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 90px 60px 100px; // симметричнее — меньше пустоты снизу
+  max-width: 1100px;
+  margin: 0 auto;
+  color: $brand-light;
+  position: relative;
+  z-index: 1;
+}
+
+// ── Left ──────────────────────────────────────────────────────────────────────
+.about__left {
+  flex: 0 0 460px;
+  min-width: 0;
+  padding-top: 80px; // под линию (~половина её высоты)
+}
+
+.about__description {
+  color: $brand-light;
+  opacity: 0.85;
+  line-height: 1.65;
+  font-size: 12.5pt;
+  text-align: left;
+  margin: 0 0 4px;
+}
+
+// ── Features ─────────────────────────────────────────────────────────────────
+.about__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.about__feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 13px 0;
+
+  span {
+    font-variant: small-caps;
+    font-size: 11.5pt;
+    color: $brand-light;
+    letter-spacing: 0.03em;
+  }
+}
+
+.about__icon {
+  width: 32px;
+  height: 28px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about__dot {
+  width: 36px;
+  height: 10px;
+  flex-shrink: 0;
+  background-image: url('../assets/icons/dot.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iconCreative { background-image: url('../assets/icons/creative.png'); }
+.iconTime     { background-image: url('../assets/icons/time.png');     }
+.iconPartners { background-image: url('../assets/icons/partners.png'); }
+.iconResult   { background-image: url('../assets/icons/result.png');   }
+
+#about .btn.outline-h {
+  margin-top: 24px;
+  &:hover {
+    background: $brand-light;
+    color: $brand-primary;
+    border-color: $brand-light;
+  }
+}
+
+// ── Right ─────────────────────────────────────────────────────────────────────
+.about__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.about__image {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  background-image: url('../assets/about-img3.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 20%, 100% 90%, 0 100%);
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+  &:hover { opacity: 0.9; }
+}
+
+.about__logo-badge {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 70px;
+  height: 36px;
+  background-image: url('../assets/logo-about.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+.about__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.about__stat {
+  background: rgba(205, 201, 228, 0.08);
+  border: 1px solid rgba(205, 201, 228, 0.2);
+  border-radius: 12px;
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s ease;
+  &:hover { background: rgba(205, 201, 228, 0.14); }
+}
+
+.about__stat-value {
+  font-size: 24pt;
+  font-family: 'Bauhaus', sans-serif;
+  color: $brand-light;
+  line-height: 1;
+}
+
+.about__stat-label {
+  font-size: 8pt;
+  color: rgba(205, 201, 228, 0.7);
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+// ── Tablet ────────────────────────────────────────────────────────────────────
+@media (max-width: 900px) {
+  .about {
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+  }
+
+  .about__line {
+    left: 50%;
+    top: 25px;
+    transform: translateX(-50%);
+  }
+
+  .about__content {
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 32px 130px;
+    gap: 28px;
+  }
+
+  .about__left {
+    flex: none;
+    width: 100%;
+    padding-top: 16px;
+    text-align: center;
+
+    .about__description { text-align: center; }
+    .about__feature     { justify-content: center; }
+  }
+
+  .about__right {
+    flex: none;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .about__image  { max-width: 240px; height: 240px; }
+  .about__stats  { max-width: 240px; }
+}
+
+// ── Mobile ────────────────────────────────────────────────────────────────────
+@media (max-width: 560px) {
+  .about-wrapper { margin-top: -30px; }
+
+  .about {
+    clip-path: polygon(0 0, 100% 5%, 100% 92%, 50% 100%, 0 92%);
+  }
+
+  .about__line {
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+  }
+
+  .about__content {
+    padding: 60px 20px 110px;
+    gap: 20px;
+  }
+
+  .about h2 { font-size: 24pt; }
+  .about h3 { font-size: 14pt; }
+  .about__description  { font-size: 11pt; }
+  .about__feature span { font-size: 10.5pt; }
+
+  .about__image  { display: none; }
+
+  .about__right {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .about__stats {
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+  .about__stat-value { font-size: 20pt; }
+  .about__stat-label { font-size: 7.5pt; }
+}

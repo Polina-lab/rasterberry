@@ -1,173 +1,277 @@
+$brand-primary: #333366;
+$brand-light:   #cdc9e4;
+$brand-accent:  #662d91;
+
 .footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $brand-light;
+
+  h2 {
+    font-weight: 50;
+    margin-bottom: 10px;
+    color: $brand-primary;
+  }
+
+  h3 {
+    font-size: 18pt;
+    max-width: 25%;
+  }
+
+  .line-before {
+    width: 15px;
+    z-index: 100;
+    margin-bottom: -40px;
+  }
+
+  .line-footer {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  // ── Content block ──────────────────────────────────────────────────────
+  .content {
+    overflow: hidden;
+    padding-top: 40px;
     position: relative;
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    color: #cdc9e4;
+    background: linear-gradient(
+      to bottom,
+      rgba(205, 201, 228, 0.4) 5%,
+      $brand-primary 50%,
+      $brand-primary 100%
+    ) $brand-primary;
+    clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 0 100%);
+    width: 100%;
 
-    h2 {
-        font-weight: 50;
-        margin-bottom: 10px;
-        color: #333366;
+    * {
+      position: relative;
+      z-index: 1;
     }
-    h3 {
-        font-size: 18pt;
-        max-width: 25%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('../assets/blueberry.jpg') center / cover no-repeat;
+      opacity: 0.1;
+      z-index: 0;
     }
-    .line-before {
-        width: 15px;
-        z-index: 100;
-        margin-bottom: -40px;
-    }
-    .line-footer {
-        margin: 20px 0;
-        width: 100%;
-    }
-    .content {
-        overflow: hidden;
-        padding-top: 40px;
-        position: relative;
+  }
+
+  // ── Container (logo + menu) ────────────────────────────────────────────
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 { max-width: 100%; }
+  }
+
+  // ── Menu columns ──────────────────────────────────────────────────────
+  .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 50px;
+    font-size: 16px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 15px 0;
         display: flex;
-        flex-direction: column;
-        align-items: center;    
-        justify-content: center;
-        background: linear-gradient(to bottom,
-        rgba(205, 201, 228, 0.4) 5%,
-        #333366 50%, #333366 100%) #333366;
-        clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 0 100%);
-        width: 100%;
-    }
-
-    .content * {
-        position: relative;
-        z-index: 1;
-      }
-
-    .content::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('../assets/blueberry.jpg') center/cover no-repeat;
-        opacity: 0.1;
-        z-index: 0;
-      }
-
-    .after-line {
-        position: relative;
-        padding: 0 20px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
-        font-family: 'Eras', 'Avenir';
-        img {
-            padding: 0 10px;
-        }
-        a {
-            display: flex;
-            flex-wrap: nowrap;
-            color: #cdc9e4;
-            font-family: 'Eras', 'Avenir';
-            text-decoration: none;
-        }
-        a:hover {
-            font-weight: bold;
-        }
-        /*.back-top {
-            justify-self: end;
-        }*/
+      }
+    }
+
+    .link-header {
+      font-size: 18px;
+      font-family: 'ArsenalBold';
+    }
+
+    .soc-med a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: 'Eras', 'Avenir';
+    }
+
+    a {
+      font-family: 'ArsenalRegular';
+      text-decoration: none;
+      color: $brand-light;
+      &:hover { font-weight: bold; }
+    }
+
+    img {
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+  // ── After line ────────────────────────────────────────────────────────
+  .after-line {
+    position: relative;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Eras', 'Avenir';
+    box-sizing: border-box;
+
+    img { padding: 0 10px; }
+
+    a {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      color: $brand-light;
+      font-family: 'Eras', 'Avenir';
+      text-decoration: none;
+      &:hover { font-weight: bold; }
+    }
+  }
+
+  // ── Tablet ────────────────────────────────────────────────────────────
+  @media (max-width: 768px) {
+    h3 {
+      max-width: 80%;
+      font-size: 15pt;
+      text-align: center;
+    }
+
+    p { width: 70%; text-align: center; }
+
+    .content {
+      clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 100%, 0 100%);
+      padding-top: 60px;
     }
 
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 20px;
-        align-items: center;
-        width: 100%;
-        padding: 0 10px;
+      flex-direction: column;
+      gap: 24px;
     }
 
     .logo-footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h3 {
-            max-width: 100%;
-        }
+      align-items: center;
+
+      img { width: 80px; }
     }
 
     .menu-footer {
+      gap: 28px;
+      justify-content: center;
+      text-align: center;
+
+      ul { margin: 0; }
+
+      li {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .soc-med a { justify-content: center; }
+    }
+  }
+
+  // ── Mobile ────────────────────────────────────────────────────────────
+  @media (max-width: 480px) {
+    h3 {
+      max-width: 90%;
+      font-size: 13pt;
+    }
+
+    p { width: 100%; text-align: center; }
+
+    .content {
+      clip-path: polygon(0 8%, 50% 0, 100% 8%, 100% 100%, 0 100%);
+      padding-top: 50px;
+    }
+
+    .menu-footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+
+      // три колонки → две строки: Resources + Social рядом, Legal отдельно
+      .resources,
+      .soc-med {
+        width: 45%;
+      }
+
+      .legal {
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        text-align: left;
-        gap: 50px;
-        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+
         ul {
-            list-style: none;
-            li {
-                margin: 15px 0;
-                align-items: center;
-                display: flex;
-            }
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0 20px;
+
+          li { margin: 8px 0; }
         }
-        .link-header {
-            font-size: 18px;
-            font-family: 'ArsenalBold';
-        }
-        .soc-med {
-            a {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                font-family: 'Eras', 'Avenir';
-            }
-        }
-        a {
-            font-family: 'ArsenalRegular';
-            text-decoration: none;
-            color: #cdc9e4;
-        }
-        a:hover {
-            font-weight: bold;
-        }
-        img {
-            width: 20px;
-            margin-right: 10px;
-        }
+      }
+
+      // Resources + Social: рядом в ряд
+      ~ .menu-footer { flex-direction: row; }
     }
 
-    @media (max-width: 768px) {
-        p {
-            width: 50%;
+    // Перекладываем Resources и Social в ряд через обёртку
+    .menu-footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+
+      .resources,
+      .soc-med {
+        width: 48%;
+        min-width: 140px;
+      }
+
+      .legal {
+        width: 100%;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0 16px;
+          padding: 0;
         }
-        .menu-footer {
-            justify-content: center;
-            text-align: center;
-            ul {
-                margin: 10px;
-                padding: 0;
-            }
-            li {
-                text-align: center;
-                justify-content: center;
-            }
-        }
+      }
     }
 
-    @media (max-width: 480px) {
-        .after-line {
-            justify-content: center;
-        }
-        p {
-            width: 100%;
-            text-align: center;
-        }
+    .after-line {
+      flex-direction: column;
+      gap: 12px;
+      padding: 0 16px 16px;
+      text-align: center;
     }
-
+  }
 }

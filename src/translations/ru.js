@@ -147,6 +147,24 @@ const ru = {
     "content-creation":    "Создание контента",
   },
 },
+"starter": {
+    "badge": "Limited offer",
+    "label": "Starter package",
+    "title": "Launch Package",
+    "subtitle": "Perfect for new businesses ready to go online. A complete starter set at half the price — designed to get you launched fast and professionally.",
+    "cardLabel": "Special price",
+    "note": "Limited time offer for new clients",
+    "includes": {
+      "website":   "Website up to 3 pages",
+      "design":    "2 design concepts to choose from",
+      "languages": "Up to 3 languages",
+      "content":   "Content help (text from client)",
+      "images":    "Images: stock or client-provided",
+      "logo":      "Simple logo based on your ideas",
+      "pages":     "No complex functionality",
+      "seo":       "Basic SEO setup"
+    }
+  },
     servicesMenu: {
   "packages": {
     title: "Packages",
@@ -317,12 +335,55 @@ const ru = {
             1: {text: "Качество и своевременность"},
             2: {text: "Совместный процесс"},
             3: {text: "Результативные решения"},
-        }
+        },
+        "stats": {
+        "projects": "Projects completed",
+        "clients":  "Happy clients",
+        "years":    "Years of experience",
+        "quality":  "Client satisfaction"
+    }
     },
     ourWorks: {
   title: "Наши работы",
   subtitle: "Подборка наших последних проектов",
   seeAll: "Смотреть все работы",
+},
+
+process: {
+  label: "Процесс работы",
+  title: "Как проходит работа над проектом",
+  subtitle: "Прозрачный и понятный процесс от идеи до запуска.",
+
+  steps: {
+    brief: {
+      title: "Брифинг",
+      text: "Обсуждаем ваш бизнес, цели, аудиторию и задачи проекта."
+    },
+    tz: {
+      title: "Техническое задание",
+      text: "Формируем структуру, требования и план работ."
+    },
+    concepts: {
+      title: "Концепции дизайна",
+      text: "Создаём визуальные концепции и определяем направление проекта."
+    },
+    feedback: {
+      title: "Согласование",
+      text: "Получаем обратную связь и вносим необходимые изменения."
+    },
+    proto: {
+      title: "Разработка",
+      text: "Создаём дизайн и реализуем проект согласно утверждённой концепции."
+    },
+    launch: {
+      title: "Запуск",
+      text: "Публикуем проект и проверяем корректность работы."
+    },
+    support: {
+      title: "Поддержка",
+      text: "Оказываем помощь после запуска и консультируем при необходимости."
+    }
+  }
 },
 
 worksPage: {

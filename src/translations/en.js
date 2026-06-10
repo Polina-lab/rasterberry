@@ -166,6 +166,24 @@ const en = {
     "content-creation":    "Content creation",
   },
 },
+"starter": {
+    "badge": "Limited offer",
+    "label": "Starter package",
+    "title": "Launch Package",
+    "subtitle": "Perfect for new businesses ready to go online. A complete starter set at half the price — designed to get you launched fast and professionally.",
+    "cardLabel": "Special price",
+    "note": "Limited time offer for new clients",
+    "includes": {
+      "website":   "Website up to 3 pages",
+      "design":    "2 design concepts to choose from",
+      "languages": "Up to 3 languages",
+      "content":   "Content help (text from client)",
+      "images":    "Images: stock or client-provided",
+      "logo":      "Simple logo based on your ideas",
+      "pages":     "No complex functionality",
+      "seo":       "Basic SEO setup"
+    }
+  },
         servicesMenu: {
   "packages": {
     title: "Packages",
@@ -336,12 +354,54 @@ const en = {
             1: {text: "Quality and Timeliness"},
             2: {text: "Collaborative Process"},
             3: {text: "Result-Driven Solutions"},
-        }
+        },
+        "stats": {
+        "projects": "Projects completed",   // ET: "Lõpetatud projekte"
+        "clients":  "Happy clients",        // ET: "Rahulolev klienti"
+        "years":    "Years of experience",  // ET: "Aasta kogemust"
+        "quality":  "Client satisfaction"  // ET: "Klientide rahulolu"
+    }
     },
     ourWorks: {
   title: "Our Works",
   subtitle: "A selection of our recent projects",
   seeAll: "See all works",
+},
+process: {
+  label: "Our Process",
+  title: "How We Work on Your Project",
+  subtitle: "A transparent and structured workflow from idea to launch.",
+
+  steps: {
+    brief: {
+      title: "Briefing",
+      text: "We discuss your business, goals, audience, and project requirements."
+    },
+    tz: {
+      title: "Project Planning",
+      text: "We define the structure, requirements, and project roadmap."
+    },
+    concepts: {
+      title: "Design Concepts",
+      text: "We create visual concepts and determine the project's direction."
+    },
+    feedback: {
+      title: "Review & Feedback",
+      text: "We gather feedback and make necessary improvements."
+    },
+    proto: {
+      title: "Design & Development",
+      text: "We design and build the project according to the approved concept."
+    },
+    launch: {
+      title: "Launch",
+      text: "We publish the project and ensure everything works correctly."
+    },
+    support: {
+      title: "Support",
+      text: "We provide post-launch assistance and ongoing consultation when needed."
+    }
+  }
 },
 
 worksPage: {

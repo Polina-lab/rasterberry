@@ -1,5 +1,6 @@
 .contact {
     position: relative;
+    margin-top: -80px;
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -136,3 +137,11 @@
       }
     }
 }
+
+@media (max-width: 768px) {
+      .contact {
+        margin-top: 0px;
+        .line-contact {
+      display: none;
+    }
+      }}

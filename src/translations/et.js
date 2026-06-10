@@ -149,6 +149,24 @@ const et = {
     "content-creation":    "Sisu loomine",
   },
 },
+"starter": {
+    "badge": "Limited offer",
+    "label": "Starter package",
+    "title": "Launch Package",
+    "subtitle": "Perfect for new businesses ready to go online. A complete starter set at half the price — designed to get you launched fast and professionally.",
+    "cardLabel": "Special price",
+    "note": "Limited time offer for new clients",
+    "includes": {
+      "website":   "Website up to 3 pages",
+      "design":    "2 design concepts to choose from",
+      "languages": "Up to 3 languages",
+      "content":   "Content help (text from client)",
+      "images":    "Images: stock or client-provided",
+      "logo":      "Simple logo based on your ideas",
+      "pages":     "No complex functionality",
+      "seo":       "Basic SEO setup"
+    }
+  },
     servicesMenu: {
   "packages": {
     title: "Packages",
@@ -319,12 +337,54 @@ const et = {
             1: {text: "Kvaliteet ja tähtaegadest kinnipidamine"},
             2: {text: "Koostööl põhinev protsess"},
             3: {text: "Tulemusele suunatud lahendused"},
-        }
+        },
+        "stats": {
+        "projects":  "Lõpetatud projekte",
+        "clients":  "Rahulolev klienti",
+        "years":    "Aasta kogemust",
+        "quality":  "Klientide rahulolu"
+    }
     },
     ourWorks: {
   title: "Meie tööd",
   subtitle: "Valik meie hiljutistest projektidest",
   seeAll: "Vaata kõiki töid",
+},
+process: {
+  label: "Tööprotsess",
+  title: "Kuidas projekt valmib",
+  subtitle: "Läbipaistev ja hästi organiseeritud protsess ideest valmislahenduseni.",
+
+  steps: {
+    brief: {
+      title: "Briif",
+      text: "Arutame teie ettevõtet, eesmärke, sihtrühma ja projekti vajadusi."
+    },
+    tz: {
+      title: "Tehniline ülesanne",
+      text: "Koostame projekti struktuuri, nõuded ja tegevusplaani."
+    },
+    concepts: {
+      title: "Disainikontseptsioonid",
+      text: "Loome visuaalsed kontseptsioonid ja määrame projekti suuna."
+    },
+    feedback: {
+      title: "Tagasiside ja kooskõlastus",
+      text: "Kogume tagasisidet ja viime sisse vajalikud muudatused."
+    },
+    proto: {
+      title: "Disain ja arendus",
+      text: "Loome disaini ning arendame projekti vastavalt kinnitatud lahendusele."
+    },
+    launch: {
+      title: "Avaldamine",
+      text: "Avaldame projekti ja kontrollime selle korrektset toimimist."
+    },
+    support: {
+      title: "Tugi",
+      text: "Pakume pärast avaldamist tuge ja nõustamist vastavalt vajadusele."
+    }
+  }
 },
 
 worksPage: {

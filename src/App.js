@@ -5,9 +5,11 @@ import Menu from './components/Menu';
 import Header from './components/Header';
 import Services from './components/Services';
 import Packages from "./components/Packages";
+import StarterPackage from './components/StarterPackage';
 //import SingleService from './components/SingleService';
 import OurWorks from './components/OurWorks';
 import About from './components/About';
+import Process from "./components/Process";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import OurWorksDetail from './components/OurWorksDetail';
@@ -85,6 +87,7 @@ const App = () => {
                 <>
                   <Header />
                   <Packages />
+                  <StarterPackage onBookClick={handleBookClick} />
                   <Services
                     sections={servicesData}
                     activeSection={activeSection}
@@ -96,6 +99,7 @@ const App = () => {
                   {selectedWork && (
                     <OurWorksDetail work={selectedWork} onClose={handleClose} />
                   )}
+                  <Process />
                   <Contact contactData={contactData} onCheckboxChange={handleCheckboxChange} />
                   
                 </>
