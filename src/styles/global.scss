@@ -120,7 +120,11 @@ h2 {font-size: 30pt;}
         margin: -30px 0 50px 0;
     }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    h1 { margin-top:60px;
+        font-size: 45pt;}
+    h2 {font-size: 26pt;}
+}
 
 @media (max-width: 480px) {
     

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import '../styles/Services.scss';
+import line from '../assets/lineServices.png';
 import lineAboutEnd from '../assets/lineAboutEnd.png';
 import SingleService from './SingleService';
 import servicesData from '../data/servicesData2';
@@ -11,6 +12,7 @@ const Services = ({ sections, activeSection, setActiveSection, onBookClick }) =>
 
   const handleSectionClick = (index) => {
     setActiveSection(index);
+    // на мобильном подскролливаем активный таб в видимую область
     if (navRef.current) {
       const items = navRef.current.querySelectorAll('li');
       items[index]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
@@ -22,7 +24,7 @@ const Services = ({ sections, activeSection, setActiveSection, onBookClick }) =>
       <img alt="" className="line-about-end" src={lineAboutEnd} aria-hidden="true" />
       <h2>{t('services.header')}</h2>
 
-      <nav className="services__nav">
+      <nav>
         <ul ref={navRef}>
           {sections.map((section, index) => (
             <li
@@ -36,8 +38,8 @@ const Services = ({ sections, activeSection, setActiveSection, onBookClick }) =>
         </ul>
       </nav>
 
-      <div className="services__line">
-        <div className="services__line-bar" />
+      <div className="line">
+        <img alt="" src={line} aria-hidden="true" />
       </div>
 
       <SingleService

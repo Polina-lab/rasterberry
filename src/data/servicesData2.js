@@ -95,32 +95,6 @@
   */
 
   const servicesData2 = [
-  /*{
-    id: "packages",
-    services: [
-      {
-        id: "startup-package",
-        background: "startupPackage service",
-        price: "from 600 €",
-        badge: "popular",
-      },
-      {
-        id: "website-package",
-        background: "websitePackage service",
-        price: "from 500 €",
-      },
-      {
-        id: "business-package",
-        background: "businessPackage service",
-        price: "from 1400 €",
-      },
-      {
-        id: "social-package",
-        background: "socialPackage service",
-        price: "250–300 €",
-      },
-    ],
-  },*/
   {
     id: "branding-identity",
     services: [
