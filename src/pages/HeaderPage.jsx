@@ -12,7 +12,7 @@ const HeaderPage = ({header, desc}) => {
             <header className="header">
                 <div className="container">
                     <h1>{header}</h1>
-                    <p>{t('pages.date')} 01.01.2025</p>
+                    <p>{t('pages.date')} 04.05.2026</p>
                     <p>{desc}</p>
                 </div>
             </header>

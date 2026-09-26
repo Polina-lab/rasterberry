@@ -1,19 +1,28 @@
 import React from "react";
 
 import HeaderPage from "./HeaderPage";
-
+import SEO from '../components/SEO';
 import { useLanguage } from "../LanguageContext";
+import Content from "./Content";
 
-const TermsOfService = () => {
+const FAQ = () => {
 
     const { t } = useLanguage();
+    const links = t(`pages.faq.links`);
 
     return (
+        <>
+        <SEO
+        title={t('links.faq')}
+        description={t('pages.faq.description')}
+        path="/faq"
+        />
         <section className="page">
             <HeaderPage header={t('links.faq')} desc={t('pages.faq.description')}/>
-            <p>This is the Privacy Policy page. Add your content here.</p>
+            <Content header='faq' links={Object.keys(links)}/>
         </section>
+        </>
     );
 };
 
-export default TermsOfService;
+export default FAQ;

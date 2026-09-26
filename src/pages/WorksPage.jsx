@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "../LanguageContext";
+import SEO from '../components/SEO';
 import WorkCard from "../components/WorkCard";
 import ourWorksData from "../data/ourWorksData";
 import "../styles/WorksPage.scss";
@@ -36,6 +37,12 @@ const WorksPage = () => {
       : ourWorksData.filter((w) => w.category === activeCategory);
 
   return (
+    <>
+    <SEO
+      title={t('worksPage.title')}
+      description={t('ourWorks.subtitle')}
+      path="/works"
+    />
     <div className="works-page">
       <h2>{t("worksPage.title")}</h2>
 
@@ -69,6 +76,7 @@ const WorksPage = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

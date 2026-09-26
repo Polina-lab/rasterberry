@@ -1,6 +1,6 @@
 .contact {
     position: relative;
-    margin-top: -80px;
+    margin-top: -60px;
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -8,11 +8,11 @@
     justify-content: center;
     color: #333366;
     .line-contact {
-      width: 100%;
+      width: 80%;
     }
     h2 {
         font-weight: 50;
-        margin-top: 5px;
+        margin-top: 20px;
     }
     .form-fields {
       font-family: 'Eras', 'Avenir';
@@ -103,6 +103,56 @@
     }
     button:hover {
       color: #fff;
+    }
+
+    // Способ связи (email / телефон) — сброс общих правил .form-group input,
+    // которые иначе растягивают радиокнопки в прямоугольники
+    .contact-method {
+        .radio-row {
+            display: flex;
+            gap: 24px;
+            margin-top: 8px;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-weight: normal;
+                cursor: pointer;
+                margin-bottom: 0;
+            }
+
+            input[type="radio"] {
+                width: auto !important;
+                padding: 0 !important;
+                border: none !important;
+                border-radius: 0 !important;
+                margin: 0 !important;
+                appearance: radio;
+            }
+        }
+    }
+
+    .field-error {
+        display: block;
+        color: #c62828;
+        font-size: 0.85rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .form-message {
+        margin: 8px 0;
+        font-size: 0.9rem;
+        text-align: center;
+
+        &.success {
+            color: #2e7d32;
+        }
+
+        &.error {
+            color: #c62828;
+        }
     }
 
     @media (max-width: 768px) {

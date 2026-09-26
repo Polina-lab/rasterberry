@@ -10,15 +10,15 @@ $brand-light:   #cdc9e4;
   align-items: center;
 
   .line-about-end {
-    width: 15px;
+    width: 13px;
     z-index: 100;
-    margin: -30px 0 50px 0;
+    margin: -120px 0 50px 0;
   }
 
   > h2 {
     font-weight: 50;
     color: $brand-primary;
-    margin-top: -30px;
+    margin-top: -20px;
   }
 
   // ── Nav — точно как works-page__nav ──────────────────────────────────
@@ -88,7 +88,7 @@ $brand-light:   #cdc9e4;
   // ── Mobile ────────────────────────────────────────────────────────────
   @media (max-width: $bp-mobile) {
     > h2 {
-      font-size: 26pt;
+      font-size: 20pt;
       margin-top: -10px;
     }
 

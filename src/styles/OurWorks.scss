@@ -81,4 +81,16 @@
         max-width: 100%;
         height: auto;
       }
+      @media (max-width: 768px) {
+        margin: 0px 10px;
+        .work-item {
+            width: 100%;
+        }
+}
+}
+
+@media (max-width: 768px) {
+    .works-list {
+        padding: 80px 5px;
+    }
 }

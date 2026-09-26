@@ -58,7 +58,7 @@ const StarterPackage = ({ onBookClick }) => {
 
             <button
               className="btn regular-h starter__btn"
-              onClick={() => onBookClick && onBookClick('starter', 'starter-package')}
+              onClick={() => onBookClick && onBookClick('packages', 'starter-package')}
             >
               {t('buttons.get')}
             </button>

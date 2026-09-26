@@ -29,6 +29,7 @@ const en = {
         get: "Get in Touch",
         book: "Book",
         send: "Send",
+        sending: "Sending...",
     },
     /*
     servicesMenu:
@@ -192,6 +193,9 @@ const en = {
         title: "Startup Package",
         description:
           "Everything a new business needs to launch with a professional presence — from logo and branding to a working website and social media visuals. Designed for entrepreneurs and startups who want to build a strong foundation fast.",
+      },
+      "starter-package":{
+        title: "Starter Package"
       },
       "website-package": {
         title: "Website Package",
@@ -433,71 +437,150 @@ worksPage: {
 
     works: {
         1: {
-            title: "Sarapuu Brand Identity",
-            description: "A natural, earthy brand identity for a local berry farm.",
-            stages: {
-            planning:       "The client needed a warm, natural brand reflecting their organic berry farm. Key goal: stand out at local markets and online.",
-            implementation: "Researched botanical and folk-art references. Defined a warm earthy palette, hand-drawn style, and serif typography.",
-            draft:          "Presented 3 logo directions. Client chose the berry cluster mark. Refined proportions and colour balance over two rounds.",
-            result:         "Delivered full brand: logo, colour system, label template, business card. Client now uses assets across packaging and social media.",
-            },
-        },
-        2: {
-            title: "Above Space — Landing Page",
-            description: "A clean, conversion-focused landing page for a co-working space.",
-            stages: {
-            planning:       "Client needed a landing page to drive bookings for their new co-working space. Target audience: freelancers and small teams.",
-            implementation: "Defined page structure, chose Tilda as platform. Wireframed sections: hero, benefits, pricing, testimonials, CTA.",
-            draft:          "Built first version in Tilda. Client approved layout; refined hero typography and CTA colour contrast.",
-            testing:        "Tested on mobile and tablet. Adjusted image breakpoints and form behaviour. Verified all links and form submissions.",
-            result:         "Page went live and drove 40+ enquiries in the first month. Client has ongoing support for content updates.",
-            },
-        },
+      title: "Sarapuu — Brand Identity",
+      description: "Logo and visual identity for a land-sale project in Aruküla — a hand-lettered mark paired with a tree illustration built around the values of nature, family, and future.",
+      stages: {
+        planning: "Defined the project's core values and target audience — families looking for a home close to nature, yet near Tallinn.",
+        draft: "Explored several mark and typography directions; the final choice was a hand-lettered wordmark paired with a tree illustration.",
+        result: "The logo and color palette (green + blue) became the foundation for the project's entire visual communication, including the website."
+      }
+    },
+    7: {
+title: "Padel 911 — Branding & Identity",
+description: "Logo and an extensible identity system for a padel tournament organizer — over a year of ongoing collaboration.",
+stages: {
+planning: "The tournament organizer needed a memorable mark that could easily scale across different tournaments and seasonal themes.",
+draft:    "Designed an arch-shaped logo with a paddle and ball, plus a system of colored mark variations for each tournament (Fast Cup, Girl Power, Team Cup).",
+result:   "The identity system has been used across posters, certificates, merch, and social media for over a year.",
+},
+},
+
+        12: {
+          title: "Above Space — Logo & Price List",
+          description: "Logo and price list for a new digital design agency — an identity reflecting the team's speed and creativity.",
+          stages: {
+          planning: "The new agency was building its team and portfolio from scratch — it needed a logo that read as \"digital\" and \"fast\" at a glance.",
+          draft:    "Designed the mark — a rocket inside an orbital ring, in an orange-and-purple palette — and laid out the services price list.",
+          result:   "The logo and price list became the foundation for all of the agency's presentation materials.",
+          },
+          },
         3: {
-            title: "Above Space branding",
-            description: "Creating the Logo, Branding and some graphic design.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-        },
-        4: {
-            title: 'OMADOMA',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-        },
+          title: "Kodu ja Lagi — Website & Identity for a Ceiling Company",
+          description: "A warm, home-style brand identity and landing page for an Estonian ceiling company — from logo to a price calculator in three languages.",
+          stages: {
+          planning:       "The client wanted a warmer contrast to competitors' tech-driven approach — a sense of coziness and home comfort rather than dry expertise.",
+          implementation: "Designed the \"Kodu ja Lagi\" logo — a hand-lettered wordmark with a ceiling-molding motif, in a warm brown-and-cream palette.",
+          draft:          "Designed the site: a light, cozy hero section, a price calculator, a benefits block, and a filterable portfolio by ceiling type.",
+          testing:        "Tested the three-language switch (ET/EN/RU) and checked all blocks' responsiveness across screen sizes.",
+          result:         "The site launched and now serves as the main channel for free-measurement and consultation requests.",
+          },
+          },
+        9: {
+          title: "OMADOMA Brand Identity",
+          description: "Brand identity for a fixed-price real estate service, built to replace percentage-based commissions.",
+          stages: {
+          planning:       "The client needed the feel of a trustworthy yet affordable alternative to traditional agencies — without the \"percentage-driven agency\" feeling.",
+          implementation: "Defined a terracotta and warm-beige palette, with a geometric house mark as the foundation of the logo.",
+          draft:          "Designed the \"OMADOMA\" mark — two houses that double as letterforms — plus light and dark background variants.",
+          result:         "The finished brand guide — palette, logo, and variations — became the foundation for all materials and the website.",
+          },
+          },
+
         5: {
-            title: 'Empathica',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
+            title: "GloReal Investments — Website for an Investment Company",
+            description: "A landing page for a real estate investment company — services, the deal process, and a property database in the new identity.",
+            stages: {
+                planning:       "Defined the site structure around the investment profile: services, what the company sells/rents, and a transparent deal process.",
+                implementation: "Built blocks for the key scenarios: quick sale at market price, a purchase request, and a full catalog of property types.",
+                draft:          "Designed the visual layer in the new identity: a geometric hero block with skyscrapers, a 6-step process, and a partners block.",
+                testing:        "Tested the request forms and checked mobile responsiveness.",
+                result:         "The site is live and running; I continue to administer it and make updates at the client's request.",
+            },
         },
         6: {
-            title: 'Ikodomos',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-        },
-        7: {
-            title: 'Laeproff',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-        },
-        8: {
-            title: 'Kodu ja Lagi',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-        },
-        9: {
-            title: 'Padel 911 branding',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-        },
-        10: {
-            title: 'Glo Real Investment',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
+          title: "Ikodomos — Equipment Rental Website & Client Dashboard",
+          description: "Logo, website design, and a booking system with a client dashboard for a construction-equipment rental company.",
+          stages: {
+          planning:       "The client needed more than a business-card site - a full system concept, from inquiry to a client dashboard with booking history.",
+          implementation: "Designed the logo — a triangular mark in dark and yellow sectors symbolizing motion and reliability - and mapped out the site structure.",
+          draft:          "Designed the site (a dark-and-yellow tech palette, service and benefit blocks) and the system screens: login, registration, dashboard, service catalog, and step-by-step booking flow.",
+          testing:        "Refined the logic of the multi-step booking form and the dashboard layout based on client feedback.",
+          result:         "Design and architecture were delivered and approved; frontend and backend development are planned as a separate phase.",
+          },
+          },
+
+        2: {
+          title: "Laeproff — Ceiling Specialists Website & Identity",
+          description: "Full brand identity and landing page for an Estonian ceiling installation company — from logo to an interactive price calculator.",
+          stages: {
+          planning:       "The client needed a tech-forward, premium feel — ceiling specialists, not just another repair crew — with transparent pricing upfront.",
+          implementation: "Designed the logo — a geometric LAEPROFF wordmark with \"cut\" letterforms, on a dark palette with a cyan accent.",
+          draft:          "Designed the site: a dark, tech-driven hero section with an interactive ceiling price calculator right on the homepage.",
+          testing:        "Verified the calculator logic (area, lamps, wiring) and checked responsiveness across screen sizes.",
+          result:         "The site launched and now works as an instant price-estimation and lead-capture tool.",
+          },
+          },
+      8: {
+        title: "Sarapuu — Land Sales Website",
+        description: "A multi-page website for selling land plots near Tallinn — from structural wireframes to a complete responsive design in Estonian and Russian.",
+        stages: {
+          planning: "Mapped out the sitemap: Home, Our Environment, Sales Information, Gallery, Price List, Contact.",
+          implementation: "Built a wireframe prototype defining block layout and navigation logic across all sections.",
+          draft: "Designed the full visual layer: a nature-inspired palette, wave-shaped section dividers, property cards, and a location-benefits block.",
+          testing: "Reviewed responsiveness across screen sizes and finalized the design with the client.",
+          result: "The site launched and now serves as the project's main sales tool."
+        }
+      },
+        4: {
+          title: "OMADOMA — Real Estate Platform",
+          description: "A fully designed landing site with flexible buy/sell/rent service packages, built in two languages.",
+          stages: {
+          planning:       "Worked out the service-package structure — from individual add-ons to a full \"turnkey\" deal-support option.",
+          implementation: "Wrote all site copy in Estonian and Russian, and mapped out the request-form logic and customer journey across sections.",
+          draft:          "Designed the visual layer: comparison cards for each package, a 3-step \"how it works\" block, and a full add-on services catalog with pricing.",
+          testing:        "Tested and refined the package structure after launch — reworked part of the services and pricing in a second design iteration.",
+          result:         "The site now runs as the main sales channel — from first inquiry to full deal support.",
+          },
+          },
+          10: {
+title: "Padel 911 — Print & Award Materials",
+description: "A design system for award certificates, T-shirts, and gift coupons across each tournament.",
+stages: {
+planning: "The client needed recognizable certificates matching each tournament's colors, plus merch for participants.",
+draft:    "Designed champion/placement certificates matching each tournament's palette, plus T-shirt designs and a free-entry gift coupon.",
+result:   "The materials are handed out at every tournament and serve as part of the club's recognizable brand.",
+},
+},
+        13: {
+            title: "GloReal Investments — Rebrand",
+            description: "A full rebrand for a real estate investment company — new logo, business cards, and a presentation folder.",
+            stages: {
+                planning:       "The client had grown from a small agency into an investment group — the old logo and materials no longer matched the business's scale.",
+                implementation: "Designed the new GloReal mark — a blue-green-yellow leaf symbolizing growth, reliability, and international reach.",
+                draft:          "Carried the new identity across touchpoints: team business cards and a presentation folder for investor meetings.",
+                result:         "The rebrand is complete and in use across all company materials; the project continues to expand.",
+            },
         },
         11: {
-            title: 'Kohe Korras',
-            description: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
-            fullDescription: "Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu. Creating the Logo Design, Branding and responsive landing page for real estate company Sarapuu.",
+        title: "Promotional Materials for a Boxing Club",
+        description: "Posters, banners, and social posts for a boxing club and its tournaments — an ongoing collaboration spanning 5 years.",
+        stages: {
+        planning: "The club needed materials for different formats: tournament posters, social posts, and live-stream cover art.",
+        draft:    "Developed a recognizable visual style for tournament posters (Narva Cup) and recurring recruitment announcements.",
+        result:   "The materials have been used across social media, printed posters, and broadcasts for 5 years — the collaboration continues.",
         },
+        },
+        14: {
+        title: "Padel 911 — Social Media Content",
+        description: "Regular tournament posters, posts, and announcements for Instagram — over a year of ongoing content.",
+        stages: {
+        planning: "The club needed a steady flow of tournament announcements and sponsor blocks for social media.",
+        draft:    "Developed a template system for posters across tournaments and seasons (Girl Power, Ho-Ho-Ho, Team Cup, Fast Cup) with a consistent partner block.",
+        result:   "The content has been published regularly for over a year and remains part of an ongoing collaboration.",
+        },
+        },
+
+
 
     },
     contact: {
@@ -515,6 +598,13 @@ worksPage: {
         addinfo_2: "Comments and questions",
         addinfo_1_Text: "Type something what You whant to know or clarify, aslo  let us know that Your project about",
         addinfo_2_Text: "Your question or comment",
+        preferredContact: "Preferred way to connect",
+        byEmail: "Email",
+        byPhone: "Phone",
+        phone: "Phone number",
+        nameError: "Only letters, spaces, hyphens and periods are allowed",
+        successMessage: "Thanks! Your message has been sent.",
+        errorMessage: "Something went wrong. Please try again or email us directly.",
     },
     pages: {
         date: "Effective Date:",
@@ -598,7 +688,7 @@ worksPage: {
             },
 
         },
-        terms: {
+        /*terms: {
             description: "Welcome to Rasterberry! These Terms of Service govern your use of our website. By accessing or using our site, you agree to comply with these terms.",
         },
         dataProcess: {
@@ -613,10 +703,255 @@ worksPage: {
         refund: {
             description: "We value your satisfaction and strive to provide exceptional service. Learn about our policies for refunds and handling complaints.",
         },
+    },*/
+    terms: {
+            description: "Tere tulemast Rasterberry! Need kasutustingimused reguleerivad teie veebisaidi kasutamist. Kasutades meie veebisaiti, nõustute järgima neid tingimusi.",
+            links: {
+                acceptance: {
+                    title: "Tingimuste aktsepteerimine",
+                    body: {
+                        p1: "Kasutades veebilehte rasterberry.com või tellides Rasterberry OÜ teenuseid, nõustute käesolevas dokumendis toodud tingimustega.",
+                        p2: "Kui te ei nõustu mõne tingimusega, palun ärge kasutage veebilehte ega tellige meie teenuseid.",
+                    },
+                },
+                services: {
+                    title: "Meie teenused",
+                    body: {
+                        p1: "Rasterberry OÜ pakub brändingu, veebidisaini, graafilise ja trükidisaini, foto- ja videosisu ning sotsiaalmeedia haldamise teenuseid — nii valmis pakettidena (Startup, Website, Business, Content & Social, Kuutugi) kui ka individuaalsete projektidena.",
+                        p2: "Iga projekti täpne maht, tähtajad ja hind lepitakse kokku pakkumises või hinnapakkumises enne töö algust.",
+                    },
+                },
+                process: {
+                    title: "Projekti töökäik",
+                    body: {
+                        p1: "Töö projektiga algab pärast hinnapakkumise kinnitamist ja ettemaksu laekumist.",
+                        p2: "Järgime standardset protsessi: briif, planeerimine, kontseptsiooni loomine, kooskõlastus ja parandused, projekti üleandmine ning tugi pärast avaldamist.",
+                    },
+                },
+                payment: {
+                    title: "Maksetingimused",
+                    body: {
+                        p1: "Kui ei ole kokku lepitud teisiti, on töö alustamiseks vajalik ettemaks; ülejäänud summa tasutakse projekti valmimisel või kokkulepitud maksegraafiku alusel.",
+                        p2: "Hinnad on toodud eurodes ja neile võib lisanduda käibemaks vastavalt Eesti seadustele.",
+                        p3: "Makse hilinemise korral võib töö projektiga peatuda kuni tasumiseni.",
+                    },
+                },
+                intellectual: {
+                    title: "Intellektuaalne omand",
+                    body: {
+                        p1: "Lõplikud kinnitatud materjalid lähevad kliendi omandisse pärast täielikku tasumist, kui ei ole kokku lepitud teisiti.",
+                        p2: "Rasterberry jätab endale õiguse näidata valminud projekte oma portfoolios, veebilehel ja sotsiaalmeedias, kui klient ei ole kirjalikult teisiti palunud.",
+                        p3: "Esialgsed visandid, mustandid ja kinnitamata disainisuunad jäävad Rasterberry omandiks.",
+                    },
+                },
+                liability: {
+                    title: "Vastutuse piirang",
+                    body: {
+                        p1: "Teeme kõik endast oleneva kvaliteetse töö tagamiseks, kuid ei vastuta kaudsete kahjude, saamata jäänud tulu ega meist sõltumatutel põhjustel tekkinud viivituste eest.",
+                        p2: "Meie kogu vastutus mis tahes nõude puhul on piiratud vastava teenuse eest tasutud summaga.",
+                    },
+                },
+                termination: {
+                    title: "Lepingu lõpetamine",
+                    body: {
+                        p1: "Kumbki pool võib projekti lõpetada kirjaliku teatega; selleks hetkeks tehtud töö kuulub arveldamisele.",
+                        p2: "Ettemaks ei kuulu tagastamisele, kui klient loobub projektist pärast töö algust — täpsemalt vaata meie Tagasimakse- ja kaebuste poliitikast.",
+                    },
+                },
+                changes: {
+                    title: "Tingimuste muutmine",
+                    body: {
+                        p1: "Võime neid tingimusi aeg-ajalt uuendada. Meie teenuste jätkuv kasutamine pärast muudatusi tähendab, et nõustute uuendatud tingimustega.",
+                    },
+                },
+                contact: {
+                    title: "Kontakt",
+                    body: {
+                        p1: "Küsimuste korral seoses käesolevate tingimustega võtke meiega ühendust: Rasterberry OÜ, Eesti, e-post on toodud kontaktide lehel.",
+                    },
+                },
+            },
+        },
+        dataProcess: {
+            description: "See leping kirjeldab isikuandmete töötlemise tingimusi kooskõlas kehtivate andmekaitseseadustega.",
+            links: {
+                scope: {
+                    title: "Reguleerimisala",
+                    body: {
+                        p1: "See andmetöötluse leping kehtib kõigi isikuandmete kohta, mida Rasterberry OÜ töötleb kliendi nimel disaini- ja arendusteenuste osutamise käigus.",
+                    },
+                },
+                roles: {
+                    title: "Rollid ja vastutus",
+                    body: {
+                        p1: "Klient on vastutav töötleja kõigi isikuandmete osas, mida kogutakse meie loodud veebilehtede või süsteemide kaudu; Rasterberry tegutseb volitatud töötlejana ja töötleb andmeid ainult kliendi dokumenteeritud juhiste alusel.",
+                    },
+                },
+                security: {
+                    title: "Andmeturbe meetmed",
+                    body: {
+                        p1: "Rakendame mõistlikke tehnilisi ja korralduslikke meetmeid töödeldavate andmete kaitsmiseks — piiratud juurdepääs, turvaline hoiustamine ning kasutatavate tööriistade regulaarne ülevaatus.",
+                    },
+                },
+                subprocessors: {
+                    title: "Alltöötlejad",
+                    body: {
+                        p1: "Teenuste osutamiseks võime kasutada usaldusväärseid kolmandate osapoolte tööriistu (majutus, kontaktvormid, e-posti teenused). Iga selline teenusepakkuja valitakse hoolikalt ja on seotud andmekaitsekohustustega.",
+                    },
+                },
+                retention: {
+                    title: "Andmete säilitamine",
+                    body: {
+                        p1: "Andmeid säilitatakse ainult nii kaua, kui see on vajalik kokkulepitud teenuste osutamiseks, või vastavalt kliendi juhistele, misjärel need kustutatakse või tagastatakse kliendile.",
+                    },
+                },
+                rights: {
+                    title: "Abi andmesubjektide õiguste teostamisel",
+                    body: {
+                        p1: "Osutame kliendile mõistlikku abi vastamaks üksikisikute päringutele, kes soovivad teostada oma andmekaitseõigusi, kooskõlas kehtiva seadusega.",
+                    },
+                },
+                contact: {
+                    title: "Kontakt",
+                    body: {
+                        p1: "Küsimuste korral seoses selle lepinguga võtke meiega ühendust: Rasterberry OÜ, Eesti, e-post on toodud kontaktide lehel.",
+                    },
+                },
+            },
+        },
+        faq: {
+            description: "Leidke vastused korduma kippuvatele küsimustele meie teenuste, protsesside ja poliitikate kohta.",
+            links: {
+                general: {
+                    title: "Üldised küsimused",
+                    body: {
+                        p1: "Rasterberry on Eesti disainistuudio, mis pakub brändingut, veebidisaini, graafilist disaini, trükitöid, fotograafiat ja sotsiaalmeedia sisu väikeettevõtetele ja startup'idele.",
+                        p2: "Töötame klientidega nii Eestis kui väljaspool — inglise, vene ja eesti keeles.",
+                    },
+                },
+                process: {
+                    title: "Kuidas töö käib",
+                    body: {
+                        p1: "Iga projekt läbib samad etapid: briif, planeerimine, kontseptsiooni loomine, kooskõlastus ja parandused, üleandmine ning tugi pärast avaldamist — loe täpsemalt meie protsessi lehelt.",
+                    },
+                },
+                pricing: {
+                    title: "Hinnad ja tasumine",
+                    body: {
+                        p1: "Hind sõltub projekti mahust — algushinnad leiad Paketid jaotisest, või kirjuta meile individuaalse hinnapakkumise saamiseks.",
+                        p2: "Töö alustamiseks on vajalik ettemaks, ülejäänud osa tasutakse projekti valmimisel.",
+                    },
+                },
+                timelines: {
+                    title: "Tähtajad",
+                    body: {
+                        p1: "Brändinguprojekt võtab tavaliselt 1–2 nädalat, veebileht 2–4 nädalat; suuremad individuaalsed projektid hinnatakse eraldi, vastavalt keerukusele.",
+                    },
+                },
+                revisions: {
+                    title: "Parandused",
+                    body: {
+                        p1: "Iga pakett sisaldab kindlat arvu parandusringe. Lisaparandused lepitakse kokku eraldi ja need on tasulised.",
+                    },
+                },
+                contact: {
+                    title: "Kas jäi küsimusi?",
+                    body: {
+                        p1: "Võta meiega ühendust kontaktivormi või e-posti teel — vastame hea meelega.",
+                    },
+                },
+            },
+        },
+        cookie: {
+            description: "Kasutame küpsiseid, et parandada teie kogemust meie veebisaidil. Meie veebisaiti kasutades nõustute küpsiste kasutamisega vastavalt sellele poliitikale.",
+            links: {
+                what: {
+                    title: "Mis on küpsised",
+                    body: {
+                        p1: "Küpsised on väikesed tekstifailid, mis salvestatakse sinu seadmesse veebilehe külastamisel. Need aitavad veebilehel korrektselt toimida ja jätavad meelde sinu eelistused.",
+                    },
+                },
+                types: {
+                    title: "Milliseid küpsiseid me kasutame",
+                    body: {
+                        p1: "Vajalikud küpsised — vajalikud veebilehe korrektseks toimimiseks.",
+                        p2: "Analüütilised küpsised — aitavad mõista, kuidas külastajad veebilehte kasutavad, et saaksime seda parandada.",
+                        p3: "Eelistuste küpsised — jätavad meelde sinu valikud, näiteks valitud keele.",
+                    },
+                },
+                purpose: {
+                    title: "Miks me küpsiseid kasutame",
+                    body: {
+                        p1: "Küpsised aitavad veebilehel sujuvalt toimida, mõista selle kasutamist ja pakkuda paremat kogemust korduvatel külastustel.",
+                    },
+                },
+                control: {
+                    title: "Küpsiste haldamine",
+                    body: {
+                        p1: "Sa saad küpsised igal ajal brauseri seadetes välja lülitada või piirata. Arvesta, et see võib mõjutada veebilehe teatud funktsioonide tööd.",
+                    },
+                },
+                thirdParty: {
+                    title: "Kolmandate osapoolte küpsised",
+                    body: {
+                        p1: "Osa küpsiseid võivad seada meie kasutatavad kolmandate osapoolte teenused, näiteks analüütikatööriistad. Neid reguleerib vastava teenuse enda privaatsuspoliitika.",
+                    },
+                },
+                contact: {
+                    title: "Kontakt",
+                    body: {
+                        p1: "Küsimused küpsiste kasutamise kohta võid saata meile: Rasterberry OÜ, Eesti, e-post on toodud kontaktide lehel.",
+                    },
+                },
+            },
+        },
+        refund: {
+            description: "Hindame teie rahulolu ja püüame pakkuda suurepärast teenust. Tutvuge meie tagasimakse- ja kaebuste käsitlemise poliitikaga.",
+            links: {
+                eligibility: {
+                    title: "Tagasimakse tingimused",
+                    body: {
+                        p1: "Töö alustamiseks tasutud ettemaks ei kuulu tagastamisele pärast projekti algust, kuna see katab juba tehtud planeerimis- ja esialgse kontseptsiooni loomise töö.",
+                        p2: "Kui me ei suuda kokkulepitud teenust osutada, tagastatakse osaliselt või täielikult tegemata jäänud töö eest tasutud summa.",
+                    },
+                },
+                howTo: {
+                    title: "Kuidas tagasimakset taotleda",
+                    body: {
+                        p1: "Tagasimakse taotlemiseks võta meiega ühendust ja kirjelda projekti üksikasju ning taotluse põhjust.",
+                        p2: "Vaatame iga taotluse eraldi läbi ja vastame 5 tööpäeva jooksul.",
+                    },
+                },
+                timeline: {
+                    title: "Menetlemise aeg",
+                    body: {
+                        p1: "Kinnitatud tagasimaksed töödeldakse 14 tööpäeva jooksul ja tagastatakse samale maksemeetodile, mida kasutati algse tasumise juures.",
+                    },
+                },
+                nonRefundable: {
+                    title: "Mis ei kuulu tagastamisele",
+                    body: {
+                        p1: "Valminud ja üle antud töö, juba tehtud kulutused kolmandate osapoolte teenustele (fotopangad, majutus, domeeni registreerimine) ning kliendi poolt juba kinnitatud individuaalsed materjalid ei kuulu tagastamisele.",
+                    },
+                },
+                complaints: {
+                    title: "Kaebused",
+                    body: {
+                        p1: "Kui tulemus ei vastanud ootustele, anna sellest teada 7 päeva jooksul pärast töö üleandmist — lahendame selle meie tavapärase paranduste protsessi kaudu.",
+                        p2: "Kui lahendust ei leita, saab kaebuse esitada kirjalikult allpool toodud kontaktidel.",
+                    },
+                },
+                contact: {
+                    title: "Kontakt",
+                    body: {
+                        p1: "Tagasimaksete ja kaebuste osas võta meiega ühendust: Rasterberry OÜ, Eesti, e-post on toodud kontaktide lehel.",
+                    },
+                },
+            },
+        },
     },
     footer: "We’d love to hear from You",
-    copyrights: "Copyright © Rasterberry 2025. All rights reserved.",
+    copyrights: "Copyright © Rasterberry 2026. All rights reserved.",
   };
   
   export default en;
-  

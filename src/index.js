@@ -4,6 +4,7 @@ import './styles/index.scss';
 import App from './App';
 import ScrollToTop from './components/ScrollToTop';
 
+import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { LanguageProvider } from "./LanguageContext";
 
@@ -13,7 +14,9 @@ root.render(
     <React.StrictMode>
       <Router>
         <ScrollToTop />
-        <App />
+        <HelmetProvider>
+          <App />
+        </HelmetProvider>
       </Router>
     </React.StrictMode>
   </LanguageProvider>

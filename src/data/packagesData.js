@@ -9,7 +9,7 @@ const packagesData = [
     id: "startup-package",
     price: "from 600 €",
     featured: true,
-    includes: ["logo-branding", "landing-page-site", "social-visuals", "cms-setup", "basic-seo"],
+    includes: ["logo-branding", "landing-page-site", "social-visuals", "basic-seo"],
   },
   {
     id: "business-package",
@@ -23,13 +23,11 @@ const packagesData = [
     featured: false,
     includes: ["feed-posts-stories", "promo-banners", "branded-templates"],
   },
-  {
-    id: "monthly-support",
+  {id: "monthly-support",
     price: "from 150 €",
-    priceNote: "/ month",
     featured: false,
-    includes: ["design-updates", "website-support", "content-creation"],
-  },
+    includes: ["monthly-support", "website-maintenance", "social-media-management"],
+  }
 ];
 
 export default packagesData;

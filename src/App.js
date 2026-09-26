@@ -28,13 +28,14 @@ import aboutFeaturesData from './data/aboutFeaturesData';
 import servicesData from './data/servicesData2';
 
 import './styles/global.scss';
-
+import SEO from './components/SEO';
 import { useLanguage } from "./LanguageContext";
 import useScrollToHash from './hooks/useScrollToHash';
 
 
 const App = () => {
   const { language } = useLanguage();
+  const { t } = useLanguage();
 
   const [activeSection, setActiveSection] = useState(0);
 
@@ -78,6 +79,12 @@ const App = () => {
   useScrollToHash();
 
     return (
+      <>
+      <SEO
+        title="Branding, Web Design & Digital Content Studio"
+        description={t('description')}
+        path="/"
+      />
         <section className={`App lang-${language}`} id="main">
           <Menu />
           <Routes>
@@ -86,7 +93,7 @@ const App = () => {
               element={
                 <>
                   <Header />
-                  <Packages />
+                  <Packages onBookClick={handleBookClick}/>
                   <StarterPackage onBookClick={handleBookClick} />
                   <Services
                     sections={servicesData}
@@ -117,6 +124,7 @@ const App = () => {
           </Routes>
           <Footer />
         </section>
+        </>
     );
 }
 

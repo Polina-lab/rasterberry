@@ -85,7 +85,6 @@
     }
 
     &__title {
-        font-size: 13pt;
         color: #333366;
         text-align: left;
         margin: 0 0 8px;
@@ -155,9 +154,6 @@
 
 @media (max-width: 768px) {
     .packages {
-        h2 {
-            font-size: 26pt;
-        }
 
         &__grid {
             gap: 14px;

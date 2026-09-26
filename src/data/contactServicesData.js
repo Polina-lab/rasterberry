@@ -1,12 +1,13 @@
 const contactServicesData = {
       "packages": {
-      subservices: ["social-package", "business-package", "website-package", "startup-package", "monthly-support"],
+      subservices: ["social-package", "business-package", "website-package", "startup-package", "monthly-support", "starter-package"],
       progress: {
-        "social-package": [250, 400],
-        "business-package": [1500, 3000],
+        "social-package": [200, 400],
+        "business-package": [1400, 3000],
         "website-package": [500, 900],
         "startup-package": [600, 1000],
         "monthly-support": [100, 600],
+        "starter-package": [200, 600],
       },
     },
     "branding-identity": {

@@ -101,12 +101,12 @@
       {
         id: "logo-design",
         background: "logoDesign service",
-        price: "70 €",
+        price: "100 €",
       },
       {
         id: "brand-identity",
         background: "brandIdentity service",
-        price: "250–300 €",
+        price: "300 €",
       },
       {
         id: "business-card",
@@ -161,12 +161,12 @@
       {
         id: "social-visuals",
         background: "socialVisuals service",
-        price: "50–70 €",
+        price: "40 €",
       },
       {
         id: "ad-banner",
         background: "adBanner service",
-        price: "100–200 €",
+        price: "100 €",
       },
       {
         id: "promotional",
@@ -191,17 +191,17 @@
       {
         id: "poster-banner",
         background: "posterBanner service",
-        price: "150 €",
+        price: "100 €",
       },
       {
         id: "brochure-flyer",
         background: "brochureFlyer service",
-        price: "250 €",
+        price: "200 €",
       },
       {
         id: "book-design",
         background: "bookDesign service",
-        price: "400 €",
+        price: "200 €",
       },
     ],
   },
@@ -211,12 +211,12 @@
       {
         id: "product-photography",
         background: "photography service",
-        price: "90–100 € / hr",
+        price: "90 € / hr",
       },
       {
         id: "visual-content",
         background: "visualContent service",
-        price: "by agreement",
+        price: "150 €",
       },
     ],
   },

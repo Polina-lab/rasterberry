@@ -8,7 +8,7 @@ import "../styles/Packages.scss";
         <img alt="Line" src="/assets/line.svg" aria-hidden="true" />
       </div>*/
 
-const Packages = () => {
+const Packages = ({ onBookClick }) => {
   const { t } = useLanguage();
 
   return (
@@ -50,11 +50,12 @@ const Packages = () => {
               ))}
             </ul>
 
-            <a href="#contact">
-              <button className={`btn ${pkg.featured ? "regular" : "outline"}`}>
-                {t("packages.cta")}
-              </button>
-            </a>
+            <button
+              className={`btn ${pkg.featured ? "regular" : "outline"}`}
+              onClick={() => onBookClick && onBookClick('packages', pkg.id)}
+            >
+              {t("packages.cta")}
+            </button>
           </div>
         ))}
       </div>
